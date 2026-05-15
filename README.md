@@ -32,5 +32,5 @@ Java • Spring Boot • REST APIs • Microservices • MySQL • Oracle • Do
 
 ## 📫 Contact
 - GitHub: https://github.com/sbharaththota  
-- Portfolio: https://yourportfolio.com  
-- Email: your.email@gmail.com  
+- Portfolio: sbharaththota.github.io
+- Email: sbharaththota@gmail.com  
