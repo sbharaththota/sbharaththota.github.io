@@ -1,424 +1,679 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-<meta charset="UTF-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Sai Bharath Thota, Data Engineer</title>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet"/>
-<style>
-:root{
-  --bg:#0b0e14;
-  --surface:#12161f;
-  --surface2:#171c27;
-  --border:rgba(255,255,255,0.08);
-  --text:#e8ecf2;
-  --text-dim:#8993a4;
-  --text-faint:#5b6472;
-  --accent:#e8b74f;
-  --accent-soft:rgba(232,183,79,0.12);
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sai Bharath Thota | Senior Data Engineer</title>
+    <meta name="description" content="Sai Bharath Thota is a Senior Data Engineer building reliable data platforms, financial data pipelines, Snowflake analytics, and AI-powered data systems.">
+    <meta name="author" content="Sai Bharath Thota">
+    <meta name="theme-color" content="#ffffff">
+    <meta property="og:title" content="Sai Bharath Thota | Senior Data Engineer">
+    <meta property="og:description" content="Engineering trusted data systems, from source to insight.">
+    <meta property="og:type" content="website">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='64' height='64' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='15' fill='%236B2D0F'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-family='Arial' font-weight='700' font-size='24' fill='white'%3ESB%3C/text%3E%3C/svg%3E">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;450;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #FFFFFF; color: #0a0a0a; line-height: 1.6; -webkit-font-smoothing: antialiased; }
+        a { color: inherit; text-decoration: none; }
+        button { font: inherit; cursor: pointer; border: none; background: none; }
+
+        /* NAV */
+        nav { position: fixed; top: 0; width: 100%; background: rgba(255,255,255,0.88); backdrop-filter: blur(20px); z-index: 100; border-bottom: 1px solid rgba(0,0,0,0.06); }
+        .nav-inner { max-width: 1200px; margin: 0 auto; padding: 1.5rem 2rem; display: flex; justify-content: space-between; align-items: center; }
+        .nav-links { display: flex; gap: 3rem; list-style: none; }
+        .nav-links a { color: #0a0a0a; font-size: 15px; transition: opacity 0.2s; }
+        .nav-links a:hover { opacity: 0.5; }
+        .nav-cta { background: #6B2D0F; color: white; padding: 0.75rem 1.75rem; border-radius: 100px; font-size: 15px; transition: opacity 0.2s; }
+        .nav-cta:hover { opacity: 0.85; }
+
+        /* HERO */
+        .hero { min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 6rem 2rem 2rem; position: relative; }
+        .hero-name { font-size: clamp(4rem, 10vw, 8rem); font-weight: 400; letter-spacing: 0.08em; line-height: 1; margin-bottom: 4rem; display: flex; align-items: center; justify-content: center; gap: 2.5rem; width: 100%; opacity: 0; animation: fadeInDown 1s ease-out 0.2s forwards; }
+        @keyframes fadeInDown { from { opacity: 0; transform: translateY(-20px); } to { opacity: 1; transform: translateY(0); } }
+        .hero-name-part { display: inline-block; }
+        .hero-name-outline { -webkit-text-stroke: 2px #0a0a0a; -webkit-text-fill-color: transparent; color: transparent; }
+        .hero-content { max-width: 1400px; width: 100%; display: flex; flex-direction: column; align-items: center; gap: 3rem; }
+        .hero-animation-section { width: 100%; text-align: center; opacity: 0; animation: fadeInUp 1s ease-out 0.4s forwards; }
+        .hero-bottom-section { width: 100%; display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: start; opacity: 0; animation: fadeInUp 1s ease-out 0.8s forwards; }
+        .hero-text { text-align: left; padding-right: 2rem; }
+        @keyframes fadeInUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+        .hero-highlights { text-align: left; padding-left: 2rem; display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem 2rem; }
+        .hero-highlight-label { font-size: 13px; color: #737373; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.5rem; }
+        .hero-highlight-value { font-size: 18px; color: #0a0a0a; font-weight: 500; }
+        .hero-tagline { font-size: clamp(3rem, 8vw, 7rem); color: #404040; font-weight: 400; letter-spacing: -0.02em; line-height: 1.1; min-height: 2.2em; display: flex; flex-direction: column; justify-content: center; }
+        .changing-text { color: #6B2D0F; font-weight: 600; display: block; min-height: 1.1em; text-align: center; }
+        .changing-text::after { content: ''; display: inline-block; width: 3px; height: 1em; background: #6B2D0F; margin-left: 2px; vertical-align: text-bottom; animation: blink 1s infinite; }
+        @keyframes blink { 0%, 50% { opacity: 1; } 51%, 100% { opacity: 0; } }
+        .hero-role { font-size: clamp(1.25rem, 2.5vw, 1.75rem); color: #0a0a0a; margin-bottom: 1.5rem; font-weight: 500; }
+        .hero-description { font-size: clamp(1rem, 1.5vw, 1.125rem); color: #737373; line-height: 1.7; }
+        .hero-cta-container { margin-top: 2.5rem; text-align: center; width: 100%; }
+        .hero-cta { display: inline-block; background: #6B2D0F; color: white; padding: 1rem 2.5rem; border-radius: 100px; font-size: 16px; font-weight: 500; transition: all 0.2s; }
+        .hero-cta:hover { background: #3D1A08; transform: translateY(-2px); box-shadow: 0 4px 12px rgba(107,45,15,0.3); }
+        .hero-socials { position: fixed; right: 2rem; top: 50%; transform: translateY(-50%); display: flex; flex-direction: column; gap: 1rem; z-index: 10; opacity: 0; animation: fadeIn 1s ease-out 1s forwards; }
+        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+        .social-link { display: flex; align-items: center; justify-content: center; width: 48px; height: 48px; background: white; border: 1px solid rgba(0,0,0,0.08); border-radius: 12px; color: #0a0a0a; font-size: 20px; transition: all 0.2s; box-shadow: 0 2px 8px rgba(0,0,0,0.04); }
+        .social-link:hover { transform: translateX(-4px); box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+
+        /* STATS */
+        .stats-bar { max-width: 1200px; margin: 0 auto 6rem; padding: 3rem 2rem; display: flex; justify-content: center; align-items: center; }
+        .stat-item { text-align: center; padding: 0 3rem; position: relative; }
+        .stat-item:not(:last-child)::after { content: ''; position: absolute; right: 0; top: 50%; transform: translateY(-50%); height: 60px; width: 1px; background: rgba(0,0,0,0.1); }
+        .stat-number { font-size: 3rem; font-weight: 600; letter-spacing: -0.02em; margin-bottom: 0.5rem; }
+        .stat-label { font-size: 14px; color: #737373; }
+
+        /* SECTIONS */
+        .section { max-width: 1200px; margin: 0 auto; padding: 6rem 2rem; }
+        .section-label { font-size: 16px; color: #737373; margin-bottom: 1rem; }
+        .section-title { font-size: clamp(2rem, 4vw, 3rem); font-weight: 400; letter-spacing: -0.025em; margin-bottom: 3rem; }
+
+        /* EXPERIENCE */
+        .experience-list { display: flex; flex-direction: column; gap: 2rem; }
+        .experience-card { background: linear-gradient(135deg, #3D1A08 0%, #6B2D0F 100%); border-radius: 24px; overflow: hidden; transition: all 0.6s cubic-bezier(0.4,0,0.2,1); position: relative; cursor: pointer; }
+        .experience-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: linear-gradient(90deg, #fff 0%, rgba(255,255,255,0.5) 100%); opacity: 0; transition: opacity 0.4s; }
+        .experience-card:hover::before { opacity: 1; }
+        .experience-card:hover { transform: translateY(-8px); box-shadow: 0 20px 60px rgba(61,26,8,0.35); }
+        .experience-header { padding: 2.5rem; cursor: pointer; display: flex; justify-content: space-between; align-items: flex-start; }
+        .experience-title-group { flex: 1; }
+        .experience-title-group h3 { font-size: 2rem; font-weight: 500; letter-spacing: -0.02em; margin-bottom: 0.75rem; color: #ffffff; }
+        .experience-role { color: rgba(255,255,255,0.6); font-size: 15px; line-height: 1.6; }
+        .experience-toggle { font-size: 2rem; color: rgba(255,255,255,0.4); transition: all 0.4s cubic-bezier(0.4,0,0.2,1); width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; border-radius: 50%; background: rgba(255,255,255,0.05); margin-left: 2rem; flex-shrink: 0; }
+        .experience-card.active .experience-toggle { transform: rotate(45deg); background: rgba(255,255,255,0.1); color: rgba(255,255,255,0.9); }
+        .expand-icon { font-size: 2rem; color: rgba(255,255,255,0.4); transition: all 0.4s cubic-bezier(0.4,0,0.2,1); width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; border-radius: 50%; background: rgba(255,255,255,0.05); margin-left: 2rem; flex-shrink: 0; }
+        .experience-card.active .expand-icon { transform: rotate(45deg); background: rgba(255,255,255,0.1); color: rgba(255,255,255,0.9); }
+        .experience-details { max-height: 0; overflow: hidden; transition: max-height 0.6s cubic-bezier(0.4,0,0.2,1); }
+        .experience-card.active .experience-details { max-height: 1600px; }
+        .experience-content { padding: 0 2.5rem 2.5rem; padding-top: 2rem; }
+        .experience-item { margin-bottom: 2rem; padding-left: 1.5rem; border-left: 2px solid rgba(255,255,255,0.1); opacity: 0; transform: translateX(-20px); transition: all 0.5s cubic-bezier(0.4,0,0.2,1); }
+        .experience-card.active .experience-item { opacity: 1; transform: translateX(0); }
+        .experience-card.active .experience-item:nth-child(1) { transition-delay: 0.1s; }
+        .experience-card.active .experience-item:nth-child(2) { transition-delay: 0.15s; }
+        .experience-card.active .experience-item:nth-child(3) { transition-delay: 0.2s; }
+        .experience-card.active .experience-item:nth-child(4) { transition-delay: 0.25s; }
+        .experience-card.active .experience-item:nth-child(5) { transition-delay: 0.3s; }
+        .experience-card.active .experience-item:nth-child(6) { transition-delay: 0.35s; }
+        .experience-item-title { font-weight: 500; margin-bottom: 0.5rem; font-size: 1.125rem; color: #ffffff; }
+        .experience-item-desc { color: rgba(255,255,255,0.7); line-height: 1.7; font-size: 15px; }
+        .experience-item-desc strong { color: rgba(255,255,255,0.95); font-weight: 500; }
+        .experience-details p { color: rgba(255,255,255,0.9); margin-bottom: 0.75rem; font-weight: 500; padding: 0 2.5rem; }
+        .experience-details ul { list-style: none; padding: 0 2.5rem; margin-bottom: 1.5rem; }
+        .experience-details li { color: rgba(255,255,255,0.7); line-height: 1.7; margin-bottom: 0.5rem; position: relative; padding-left: 1.5rem; }
+        .experience-details li::before { content: '\2022'; position: absolute; left: 0; color: rgba(255,255,255,0.4); }
+
+        /* MODAL */
+        .modal-overlay { position: fixed; inset: 0; background: rgba(10,10,10,0.65); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); display: flex; align-items: center; justify-content: center; z-index: 1000; opacity: 0; pointer-events: none; transition: opacity 0.3s ease; padding: 2rem; }
+        .modal-overlay.active { opacity: 1; pointer-events: auto; }
+        .modal-container { background: linear-gradient(135deg, #3D1A08 0%, #6B2D0F 100%); border-radius: 24px; max-width: 900px; width: 100%; max-height: 85vh; overflow-y: auto; padding: 3rem; padding-top: 2.5rem; position: relative; color: #fff; transform: translateY(20px) scale(0.98); transition: transform 0.3s ease; box-shadow: 0 30px 80px rgba(0,0,0,0.5); }
+        .modal-overlay.active .modal-container { transform: translateY(0) scale(1); }
+        .modal-close { position: absolute; top: 1.25rem; right: 1.25rem; background: rgba(255,255,255,0.08); border: none; color: rgba(255,255,255,0.85); width: 40px; height: 40px; border-radius: 50%; font-size: 1.4rem; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: background 0.2s, transform 0.2s; line-height: 1; padding: 0; z-index: 2; }
+        .modal-close:hover { background: rgba(255,255,255,0.18); transform: rotate(90deg); }
+        .modal-title-block { padding-right: 3rem; margin-bottom: 2rem; }
+        .modal-title-block h3 { font-size: 2rem; font-weight: 500; letter-spacing: -0.02em; margin-bottom: 0.75rem; color: #ffffff; }
+        .modal-title-block .experience-role { color: rgba(255,255,255,0.6); font-size: 15px; line-height: 1.6; }
+        .modal-body .experience-content { padding: 0; }
+        .modal-body .experience-item { opacity: 1; transform: none; }
+        body.modal-open { overflow: hidden; }
+
+        /* PROJECTS */
+        .projects-three-cards { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; }
+        .ptile { border: 1px solid rgba(0,0,0,0.08); border-radius: 20px; padding: 32px; background: #fff; display: flex; flex-direction: column; gap: 16px; transition: transform 0.2s, box-shadow 0.2s; position: relative; overflow: hidden; }
+        a.ptile { text-decoration: none; color: inherit; cursor: pointer; }
+        .ptile::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: linear-gradient(90deg, #3D1A08, #6B2D0F); }
+        .ptile:hover { transform: translateY(-6px); box-shadow: 0 16px 40px rgba(107,45,15,0.12); }
+        .ptile-top { display: flex; align-items: center; justify-content: space-between; }
+        .ptile-num { font-size: 13px; font-weight: 700; color: #6B2D0F; letter-spacing: 0.04em; }
+        .ptile-type { font-size: 11px; font-weight: 500; color: #737373; letter-spacing: 0.04em; text-transform: uppercase; text-align: right; }
+        .ptile-name { font-size: 24px; font-weight: 600; letter-spacing: -0.03em; color: #0a0a0a; line-height: 1.1; }
+        .ptile-desc { font-size: 14px; color: #404040; line-height: 1.7; flex: 1; }
+        .ptile-tags { display: flex; flex-wrap: wrap; gap: 6px; }
+        .ptile-link { font-size: 14px; font-weight: 600; color: #6B2D0F; margin-top: 4px; transition: opacity 0.2s; }
+        .ptile-link:hover { opacity: 0.7; }
+        .tech-tag { padding: 0.4rem 0.9rem; background: #fafafa; border: 1px solid rgba(0,0,0,0.1); border-radius: 100px; font-size: 0.8rem; color: #0a0a0a; font-weight: 500; }
+
+        /* VALUES */
+        .values-section { padding: 6rem 2rem; background: #fafafa; min-height: 150vh; position: relative; }
+        .values-container { max-width: 1200px; margin: 0 auto; position: sticky; top: 0; height: 100vh; display: flex; flex-direction: column; justify-content: center; }
+        .values-header { text-align: center; margin-bottom: 3rem; }
+        .dna-helix { position: relative; height: 600px; display: flex; align-items: center; justify-content: center; perspective: 2000px; }
+        .helix-track { position: relative; width: 100%; height: 100%; transform-style: preserve-3d; }
+        .value-card { position: absolute; width: 450px; height: 280px; background: linear-gradient(135deg, #3D1A08 0%, #6B2D0F 100%); border-radius: 24px; padding: 3rem; left: 50%; top: 50%; margin-left: -225px; margin-top: -140px; backface-visibility: hidden; display: flex; flex-direction: column; justify-content: center; box-shadow: 0 20px 60px rgba(61,26,8,0.3); transform-style: preserve-3d; }
+        .value-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: linear-gradient(90deg, #fff 0%, rgba(255,255,255,0.5) 100%); }
+        .value-title { font-size: 1.75rem; font-weight: 500; color: #fff; margin-bottom: 1rem; letter-spacing: -0.02em; line-height: 1.2; }
+        .value-description { font-size: 16px; color: rgba(255,255,255,0.75); line-height: 1.7; }
+        .value-card:nth-child(1) { transform: rotateY(0deg) translateZ(600px); }
+        .value-card:nth-child(2) { transform: rotateY(60deg) translateZ(600px); }
+        .value-card:nth-child(3) { transform: rotateY(120deg) translateZ(600px); }
+        .value-card:nth-child(4) { transform: rotateY(180deg) translateZ(600px); }
+        .value-card:nth-child(5) { transform: rotateY(240deg) translateZ(600px); }
+        .value-card:nth-child(6) { transform: rotateY(300deg) translateZ(600px); }
+
+        /* SKILLS */
+        .skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; }
+        .skill-card { background: #fafafa; padding: 1.5rem; border-radius: 8px; border: 1px solid rgba(0,0,0,0.06); transition: all 0.3s; }
+        .skill-card:hover { border-color: #6B2D0F; transform: translateY(-2px); }
+        .skill-card-title { font-size: 0.875rem; text-transform: uppercase; letter-spacing: 0.1em; color: #737373; margin-bottom: 1rem; font-weight: 600; }
+        .skill-card-items { display: flex; flex-direction: column; gap: 0.5rem; }
+        .skill-card-item { font-size: 0.95rem; color: #0a0a0a; }
+
+        /* ABOUT */
+        .about-box { background: linear-gradient(135deg, #3D1A08 0%, #6B2D0F 100%); padding: 4rem 3rem; border-radius: 24px; }
+        .about-box p { color: rgba(255,255,255,0.85); font-size: 17px; line-height: 1.8; margin-bottom: 1.5rem; }
+        .about-box p:last-child { margin-bottom: 0; }
+
+        /* CONTACT + FOOTER */
+        .contact { text-align: center; padding: 8rem 2rem; }
+        .contact h2 { font-size: clamp(2.5rem, 5vw, 4rem); font-weight: 400; letter-spacing: -0.03em; margin-bottom: 2rem; }
+        footer { max-width: 1200px; margin: 0 auto; padding: 3rem 2rem; display: flex; justify-content: space-between; border-top: 1px solid rgba(0,0,0,0.06); }
+        .footer-links { display: flex; gap: 2rem; }
+        .footer-links a { color: #737373; font-size: 15px; transition: color 0.2s; }
+        .footer-links a:hover { color: #0a0a0a; }
+        .footer-copy { color: #737373; font-size: 15px; }
+
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+            .nav-links { display: none; }
+            .hero-name { font-size: clamp(2.5rem, 12vw, 4rem); flex-direction: column; gap: 0; margin-bottom: 2rem; }
+            .hero-tagline { font-size: clamp(2rem, 10vw, 4rem); }
+            .hero-bottom-section { grid-template-columns: 1fr; gap: 2rem; }
+            .hero-text { text-align: center; padding-right: 0; }
+            .hero-highlights { padding-left: 0; grid-template-columns: repeat(2, 1fr); }
+            .hero-socials { right: 1rem; }
+            .stats-bar { flex-wrap: wrap; gap: 2rem; }
+            .stat-item { padding: 0 1.5rem; flex: 0 0 calc(50% - 1rem); }
+            .stat-number { font-size: 2.5rem; }
+            .projects-three-cards { grid-template-columns: 1fr; }
+            .skills-grid { grid-template-columns: 1fr; }
+            .dna-helix { height: 500px; }
+            .value-card { width: 260px; height: 140px; margin-left: -130px; margin-top: -70px; padding: 1.25rem; }
+            .value-card:nth-child(1) { transform: rotateY(0deg) translateZ(300px); }
+            .value-card:nth-child(2) { transform: rotateY(60deg) translateZ(300px); }
+            .value-card:nth-child(3) { transform: rotateY(120deg) translateZ(300px); }
+            .value-card:nth-child(4) { transform: rotateY(180deg) translateZ(300px); }
+            .value-card:nth-child(5) { transform: rotateY(240deg) translateZ(300px); }
+            .value-card:nth-child(6) { transform: rotateY(300deg) translateZ(300px); }
+            .value-title { font-size: 1.1rem; }
+            .value-description { font-size: 13px; line-height: 1.5; }
+            .experience-header { padding: 1.75rem; }
+            .experience-title-group h3 { font-size: 1.5rem; }
+            .experience-content { padding: 0 1.75rem 1.75rem; padding-top: 1.5rem; }
+            footer { flex-direction: column; gap: 2rem; text-align: center; }
+        }
+
+
+/* Portfolio enhancements: preserve the original white + espresso design language */
+:root { --ink:#0a0a0a; --muted:#737373; --espresso:#6B2D0F; --espresso-dark:#3D1A08; --line:rgba(0,0,0,0.08); }
+html { scroll-behavior: smooth; scroll-padding-top: 100px; }
+body { font-family:'DM Sans',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif; overflow-x:hidden; }
+body, button, a { -webkit-tap-highlight-color:transparent; }
+button { color:inherit; }
+:focus-visible { outline:3px solid #b66b47; outline-offset:3px; }
+.nav-inner { max-width:1320px; padding:1.15rem 2rem; gap:1.5rem; }
+.nav-brand { font-size:16px; font-weight:700; letter-spacing:-.035em; white-space:nowrap; }
+.brand-dot { color:var(--espresso); }
+.nav-links { gap:1.35rem; }
+.nav-links a { font-size:13px; }
+.nav-actions { display:flex; align-items:center; gap:1rem; }
+.nav-cta { white-space:nowrap; padding:.7rem 1.25rem; font-size:13px; font-weight:600; }
+.menu-toggle { display:none; align-items:center; justify-content:center; flex-direction:column; width:42px; height:42px; gap:5px; border:1px solid var(--line); border-radius:12px; }
+.menu-toggle span { width:19px; height:2px; background:#111; border-radius:5px; transition:transform .2s; }
+.hero { min-height:100svh; padding:8rem 2rem 4.5rem; }
+.hero-kicker { font-size:11px; font-weight:700; letter-spacing:.19em; text-align:center; color:#916049; margin-bottom:2.25rem; opacity:0; animation:fadeInDown .7s ease-out .1s forwards; }
+.hero-name { font-size:clamp(3.3rem,7.7vw,8rem); gap:2rem; letter-spacing:.035em; margin-bottom:3.2rem; white-space:nowrap; }
+.hero-name-outline { -webkit-text-stroke:2px #0a0a0a; }
+.hero-content { gap:2.75rem; }
+.hero-tagline { max-width:1200px; margin:auto; font-size:clamp(2.7rem,6.3vw,6.3rem); text-align:center; }
+.changing-text { min-height:1.3em; }
+.hero-bottom-section { max-width:1100px; gap:4rem; }
+.hero-description { max-width:490px; }
+.hero-role { font-weight:600; font-size:clamp(1.1rem,1.6vw,1.45rem); }
+.role-divider { color:#b7a79b; margin:0 .4rem; }
+.hero-highlights { padding-left:1rem; gap:1.5rem 2.5rem; }
+.hero-highlight-value { font-size:16px; }
+.hero-cta-container { display:flex; align-items:center; justify-content:center; flex-wrap:wrap; gap:1rem; margin-top:0; }
+.hero-cta { font-size:15px; display:inline-flex; align-items:center; justify-content:center; gap:.9rem; }
+.secondary-cta { display:inline-flex; align-items:center; justify-content:center; gap:.75rem; border:1px solid rgba(107,45,15,.22); color:var(--espresso); padding:1rem 1.8rem; border-radius:100px; font-weight:600; font-size:15px; transition:all .2s ease; }
+.secondary-cta:hover { background:#faf5f1; transform:translateY(-2px); }
+.scroll-prompt { position:absolute; bottom:1.3rem; left:50%; transform:translateX(-50%); display:flex; align-items:center; gap:10px; font-size:11px; letter-spacing:.14em; text-transform:uppercase; color:#888; }
+.scroll-prompt span:last-child { font-size:19px; }
+.stats-bar { padding:3rem 2rem 4rem; margin-bottom:3rem; }
+.stat-number { font-size:clamp(2.25rem,3.7vw,3.25rem); }
+.stat-plus { color:var(--espresso); }
+.stat-label { max-width:195px; }
+.section { padding:5.5rem 2rem; }
+.section-intro { color:var(--muted); font-size:16px; max-width:735px; margin:-1.4rem 0 2.5rem; line-height:1.8; }
+.section-label { font-weight:600; font-size:14px; }
+.section-title { margin-bottom:2.8rem; }
+.experience-card { cursor:default; }
+.experience-header { width:100%; text-align:left; border:0; font:inherit; background:transparent; }
+.experience-role { font-size:14px; }
+.experience-header:hover .experience-toggle { transform:rotate(90deg); color:#fff; background:rgba(255,255,255,.15); }
+.experience-card:hover { transform:translateY(-6px); }
+.experience-card:nth-child(even) { background:linear-gradient(135deg,#48200e 0%,#713718 100%); }
+.experience-item { opacity:1; transform:none; }
+.experience-item-desc { margin-bottom:0; }
+.experience-item-desc strong { font-weight:700; }
+.ptile { cursor:pointer; text-align:left; font:inherit; width:100%; min-height:270px; }
+.ptile:focus-visible { outline-offset:5px; }
+.ptile-name { font-size:clamp(20px,2.1vw,24px); }
+.ptile-link { margin-top:auto; padding-top:7px; }
+.ptile:hover .ptile-link { text-decoration:underline; text-underline-offset:4px; }
+.architecture-panel { border:1px solid rgba(107,45,15,.16); border-radius:25px; background:linear-gradient(165deg,#fff 0%,#fffcfa 100%); padding:2rem; box-shadow:0 16px 50px rgba(60,25,8,.05); }
+.architecture-header { display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:10px; margin-bottom:2.3rem; }
+.arch-eyebrow { font-size:11px; color:#6B2D0F; font-weight:800; letter-spacing:.1em; display:inline-flex; align-items:center; gap:8px; }
+.architecture-caption { font-size:12px; color:#888; }
+.live-dot { width:8px; height:8px; border-radius:50%; background:#ba7857; box-shadow:0 0 0 4px rgba(186,120,87,.12); }
+.architecture-flow { display:flex; align-items:stretch; justify-content:space-between; gap:8px; }
+.flow-step { flex:1; min-width:0; background:#fff; border:1px solid #eae2dd; padding:1.3rem 1rem; border-radius:16px; display:flex; flex-direction:column; align-items:flex-start; gap:.8rem; min-height:180px; }
+.flow-step-num { font-size:10px; font-weight:800; letter-spacing:.12em; color:#b59a8b; }
+.flow-step-icon { width:40px; height:40px; border-radius:12px; display:flex; align-items:center; justify-content:center; background:#f5ece6; color:#6B2D0F; font-size:24px; }
+.flow-step strong { font-size:16px; font-weight:700; }
+.flow-step small { font-size:12px; line-height:1.55; color:#888; }
+.flow-arrow { display:flex; align-items:center; justify-content:center; flex:0 0 18px; color:#a27a66; font-size:20px; }
+.architecture-foundation { margin-top:1.2rem; padding:1.1rem 1.3rem; border:1px dashed rgba(107,45,15,.26); border-radius:14px; display:grid; grid-template-columns:repeat(4,1fr); gap:1rem; color:#6d5145; background:#fff; }
+.architecture-foundation div { font-size:12px; display:flex; gap:7px; align-items:center; font-weight:600; }
+.architecture-foundation span { color:#6B2D0F; font-size:16px; }
+.principles-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:1.3rem; margin-top:1.5rem; }
+.principle { padding:1.8rem; border:1px solid var(--line); border-radius:18px; }
+.principle-number { font-size:10px; font-weight:800; letter-spacing:.13em; color:#8d4f33; margin-bottom:1rem; }
+.principle h3 { font-size:20px; font-weight:600; letter-spacing:-.03em; margin-bottom:.65rem; }
+.principle p { font-size:14px; line-height:1.7; color:#737373; }
+.values-section { min-height:180vh; padding-top:4rem; padding-bottom:4rem; }
+.values-container { top:0; }
+.values-subtitle { color:#737373; margin-top:-1rem; }
+.helix-hint { text-align:center; color:#948178; font-size:10px; letter-spacing:.18em; font-weight:700; }
+.helix-hint span { font-size:15px; margin-left:6px; }
+.credential-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:1.3rem; }
+.credential-card { padding:2rem; border:1px solid var(--line); border-radius:20px; background:#fff; display:flex; gap:1rem; }
+.credential-symbol { border-radius:12px; width:44px; height:44px; flex:0 0 44px; display:flex; align-items:center; justify-content:center; color:var(--espresso); background:#fbf3ee; font-size:25px; }
+.credential-card h3 { font-size:18px; font-weight:650; line-height:1.3; margin-bottom:.55rem; }
+.credential-card p { font-size:14px; font-weight:550; margin-bottom:.5rem; }
+.credential-card span { font-size:12px; line-height:1.6; color:#888; }
+.contact { padding:7rem 2rem; }
+.contact h2 { max-width:900px; margin:0 auto 1.5rem; line-height:1.08; }
+.contact h2 span { color:var(--espresso); }
+.contact p { max-width:570px; margin:0 auto 2rem; color:#777; font-size:16px; line-height:1.8; }
+.contact-actions { display:flex; gap:1rem; flex-wrap:wrap; justify-content:center; }
+.contact-email { display:inline-block; margin-top:1.7rem; font-size:14px; color:#916049; text-decoration:underline; text-underline-offset:4px; }
+.footer-mid { margin:0 .4rem; }
+.modal-overlay { visibility:hidden; }
+.modal-overlay.active { visibility:visible; }
+.modal-container { scrollbar-width:thin; scrollbar-color:#9b5b38 transparent; }
+.modal-container::-webkit-scrollbar { width:8px; }
+.modal-container::-webkit-scrollbar-thumb { background:#9b5b38; border-radius:8px; }
+.modal-body .experience-content { padding:0; }
+.modal-body .experience-item { border-color:rgba(255,255,255,.26); }
+.modal-body .experience-item h4 { line-height:1.35; }
+.modal-body .experience-item-desc { color:rgba(255,255,255,.76); }
+.modal-body .experience-item:last-child { margin-bottom:0; }
+.values-section { overflow:clip; }
+@media (max-width:1100px) { .nav-links { gap:.7rem; } .nav-links a { font-size:12px; } .hero-name { gap:1rem; } .hero-socials { right:.7rem; } }
+@media (max-width:960px) {
+    .nav-inner { position:relative; }
+    .nav-links { display:none; position:absolute; top:100%; left:0; right:0; background:rgba(255,255,255,.98); backdrop-filter:blur(20px); padding:1rem 1.5rem 1.5rem; box-shadow:0 14px 25px rgba(0,0,0,.07); border-bottom:1px solid var(--line); grid-template-columns:repeat(2,minmax(0,1fr)); gap:0; }
+    .nav-links.open { display:grid; }
+    .nav-links a { display:block; padding:12px; font-size:14px; }
+    .menu-toggle { display:flex; }
+    .hero-socials { position:absolute; top:auto; bottom:5.2rem; right:1rem; flex-direction:row; transform:none; gap:.5rem; }
+    .social-link { width:38px; height:38px; }
+    .architecture-flow { flex-wrap:wrap; }
+    .flow-step { flex:1 1 26%; }
+    .flow-arrow { display:none; }
 }
-*{margin:0;padding:0;box-sizing:border-box;}
-html{scroll-behavior:smooth;}
-body{
-  background:var(--bg);
-  color:var(--text);
-  font-family:'Space Grotesk',sans-serif;
-  line-height:1.6;
+@media (max-width:768px) {
+    .nav-inner { padding:.8rem 1rem; }
+    .nav-brand { font-size:14px; }
+    .nav-cta { padding:.58rem 1rem; font-size:12px; }
+    .hero { padding:8rem 1.25rem 6rem; }
+    .hero-kicker { font-size:9px; letter-spacing:.11em; }
+    .hero-name { white-space:normal; font-size:clamp(2.6rem,11vw,4.3rem); gap:.05rem; line-height:1.03; }
+    .hero-tagline { font-size:clamp(2.2rem,8vw,4rem); min-height:3.2em; }
+    .hero-bottom-section { max-width:520px; }
+    .hero-highlights { gap:1.1rem; }
+    .hero-highlight-value { font-size:14px; }
+    .hero-cta-container { gap:.65rem; }
+    .hero-cta,.secondary-cta { padding:.85rem 1.25rem; font-size:13px; }
+    .hero-socials { bottom:1rem; right:1rem; }
+    .scroll-prompt { display:none; }
+    .stats-bar { gap:0; padding:2rem 1rem; }
+    .stat-item { flex:0 0 50%; padding:1.4rem .7rem; }
+    .stat-item::after { display:none; }
+    .stat-label { margin:auto; }
+    .section { padding:4.2rem 1.25rem; }
+    .section-intro { margin-top:-1.5rem; }
+    .experience-header { align-items:center; }
+    .experience-role { line-height:1.65; }
+    .ptile { min-height:245px; padding:25px; }
+    .architecture-panel { padding:1.1rem; }
+    .flow-step { flex:1 1 calc(50% - 8px); min-height:150px; }
+    .architecture-foundation { grid-template-columns:repeat(2,1fr); }
+    .principles-grid,.credential-grid { grid-template-columns:1fr; }
+    .values-section { min-height:150vh; padding:3rem .75rem; }
+    .values-header { margin-bottom:0; }
+    .dna-helix { height:380px; }
+    .value-card { width:270px; height:164px; margin-left:-135px; margin-top:-82px; padding:1.5rem; }
+    .value-title { font-size:1.15rem; margin-bottom:.5rem; }
+    .value-description { font-size:12px; }
+    .contact { padding:6rem 1rem; }
+    footer { padding:2.5rem 1rem; }
+    .modal-overlay { padding:1rem; }
+    .modal-container { padding:2.3rem 1.5rem 1.6rem; max-height:88vh; }
+    .modal-title-block h3 { font-size:1.65rem; }
 }
-.mono{font-family:'IBM Plex Mono',monospace;}
-a{color:inherit;text-decoration:none;}
-.wrap{max-width:920px;margin:0 auto;padding:0 2rem;}
- 
-/* NAV */
-nav{
-  position:sticky;top:0;z-index:100;
-  background:rgba(11,14,20,0.85);
-  backdrop-filter:blur(12px);
-  border-bottom:1px solid var(--border);
+@media (max-width:420px) {
+    .nav-brand { font-size:13px; }
+    .nav-cta { display:none; }
+    .hero-name { font-size:11.7vw; }
+    .hero-highlights { grid-template-columns:1fr 1fr; }
+    .hero-description { font-size:15px; }
+    .hero-socials { bottom:.75rem; }
+    .value-card { width:242px; height:160px; margin-left:-121px; margin-top:-80px; }
+    .flow-step { min-height:145px; }
 }
-.nav-inner{
-  max-width:920px;margin:0 auto;padding:1.1rem 2rem;
-  display:flex;align-items:center;justify-content:space-between;
+@media (prefers-reduced-motion:reduce) {
+    html { scroll-behavior:auto; }
+    *,*::before,*::after { animation-duration:.001ms!important; animation-iteration-count:1!important; transition-duration:.001ms!important; }
+    .hero-name,.hero-kicker,.hero-animation-section,.hero-bottom-section,.hero-socials { opacity:1!important; }
+    .changing-text::after { display:none; }
 }
-.nav-logo{font-family:'IBM Plex Mono',monospace;font-weight:600;font-size:14px;color:var(--accent);letter-spacing:0.02em;}
-.nav-links{display:flex;gap:2rem;list-style:none;}
-.nav-links a{font-size:13px;color:var(--text-dim);transition:color 0.2s;}
-.nav-links a:hover{color:var(--text);}
-.nav-status{display:flex;align-items:center;gap:0.5rem;font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--text-faint);}
-.dot{width:6px;height:6px;border-radius:50%;background:var(--accent);}
- 
-/* HERO */
-.hero{padding:5.5rem 0 4rem;}
-.hero-tag{
-  display:inline-block;font-family:'IBM Plex Mono',monospace;font-size:12px;
-  color:var(--accent);background:var(--accent-soft);border:1px solid rgba(232,183,79,0.25);
-  padding:0.4rem 0.9rem;border-radius:20px;margin-bottom:1.5rem;
-}
-.hero h1{font-size:clamp(32px,5vw,52px);font-weight:700;line-height:1.15;letter-spacing:-0.01em;margin-bottom:1rem;}
-.hero-role{font-family:'IBM Plex Mono',monospace;font-size:15px;color:var(--text-dim);margin-bottom:1.5rem;}
-.hero-role .accent{color:var(--accent);}
-.hero p{font-size:16px;color:var(--text-dim);max-width:600px;margin-bottom:2rem;}
-.hero p strong{color:var(--text);font-weight:600;}
-.btn-row{display:flex;gap:0.75rem;flex-wrap:wrap;margin-bottom:3rem;}
-.btn{
-  padding:0.75rem 1.4rem;border-radius:8px;font-size:14px;font-weight:600;
-  display:inline-flex;align-items:center;gap:0.4rem;cursor:pointer;transition:all 0.2s;
-}
-.btn-primary{background:var(--accent);color:#0b0e14;}
-.btn-primary:hover{background:#f0c565;}
-.btn-outline{border:1px solid var(--border);color:var(--text);}
-.btn-outline:hover{border-color:var(--text-dim);}
- 
-.stat-row{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--border);border-radius:10px;overflow:hidden;}
-.stat{background:var(--surface);padding:1.25rem 1rem;text-align:center;}
-.stat-num{font-family:'IBM Plex Mono',monospace;font-size:22px;font-weight:600;color:var(--accent);}
-.stat-lbl{font-size:11px;color:var(--text-faint);margin-top:4px;letter-spacing:0.02em;}
- 
-/* SECTION */
-section{padding:4rem 0;border-top:1px solid var(--border);}
-.sec-label{font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--accent);letter-spacing:0.08em;margin-bottom:0.6rem;}
-.sec-title{font-size:28px;font-weight:700;margin-bottom:2rem;letter-spacing:-0.01em;}
- 
-/* ABOUT */
-.about-grid{display:grid;grid-template-columns:1.1fr 0.9fr;gap:3rem;align-items:start;}
-.about-text p{color:var(--text-dim);margin-bottom:1rem;font-size:15px;}
-.about-text strong{color:var(--text);}
-.principle{
-  display:flex;gap:0.75rem;padding:0.85rem 0;border-bottom:1px solid var(--border);
-  font-size:14px;color:var(--text-dim);
-}
-.principle:last-child{border-bottom:none;}
-.principle .k{color:var(--accent);font-weight:600;flex-shrink:0;}
- 
-.terminal{
-  background:var(--surface);border:1px solid var(--border);border-radius:10px;overflow:hidden;
-}
-.term-bar{
-  display:flex;gap:6px;padding:0.7rem 1rem;background:var(--surface2);
-  border-bottom:1px solid var(--border);
-}
-.term-dot{width:9px;height:9px;border-radius:50%;}
-.term-body{padding:1.3rem;font-family:'IBM Plex Mono',monospace;font-size:12.5px;line-height:2;}
-.t-key{color:var(--accent);}
-.t-str{color:#8fd4a8;}
-.t-com{color:var(--text-faint);font-style:italic;}
- 
-/* SKILLS */
-.skill-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;}
-.skill-card{
-  background:var(--surface);border:1px solid var(--border);border-radius:10px;
-  padding:1.3rem;
-}
-.skill-card h4{font-size:13px;color:var(--accent);margin-bottom:0.7rem;font-family:'IBM Plex Mono',monospace;}
-.skill-tags{display:flex;flex-wrap:wrap;gap:0.4rem;}
-.tag{
-  font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--text-dim);
-  background:var(--surface2);border:1px solid var(--border);padding:3px 8px;border-radius:5px;
-}
- 
-/* WORK */
-.job{padding:1.75rem 0;border-bottom:1px solid var(--border);}
-.job:last-child{border-bottom:none;}
-.job-head{display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:0.5rem;margin-bottom:0.2rem;}
-.job-title{font-size:17px;font-weight:600;}
-.job-date{font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--text-faint);}
-.job-co{font-size:14px;color:var(--accent);margin-bottom:0.9rem;}
-.job ul{padding-left:1.1rem;}
-.job li{font-size:14px;color:var(--text-dim);margin-bottom:0.5rem;}
-.job li strong{color:var(--text);}
- 
-/* PROJECTS */
-.proj-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem;}
-.proj-card{
-  background:var(--surface);border:1px solid var(--border);border-radius:10px;
-  padding:1.4rem;transition:border-color 0.2s;
-}
-.proj-card:hover{border-color:rgba(232,183,79,0.35);}
-.proj-top{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:0.6rem;}
-.proj-title{font-size:15px;font-weight:600;}
-.proj-link{font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--accent);white-space:nowrap;}
-.proj-card p{font-size:13px;color:var(--text-dim);margin-bottom:0.9rem;}
-.proj-tags{display:flex;flex-wrap:wrap;gap:0.35rem;}
- 
-/* EDUCATION */
-.edu-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem;}
-.edu-card{background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:1.3rem;}
-.edu-year{font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--accent);margin-bottom:0.4rem;}
-.edu-deg{font-size:15px;font-weight:600;margin-bottom:0.2rem;}
-.edu-school{font-size:13px;color:var(--text-dim);}
- 
-/* CONTACT */
-.contact-inner{text-align:center;padding:4rem 0 5rem;}
-.contact-inner h2{font-size:32px;font-weight:700;margin-bottom:0.8rem;}
-.contact-inner p{color:var(--text-dim);max-width:480px;margin:0 auto 2rem;font-size:15px;}
-.clink-row{display:flex;gap:0.75rem;justify-content:center;flex-wrap:wrap;}
-.clink{
-  display:flex;align-items:center;gap:0.5rem;padding:0.75rem 1.2rem;
-  border:1px solid var(--border);border-radius:8px;font-size:13px;transition:all 0.2s;
-}
-.clink:hover{border-color:var(--accent);color:var(--accent);}
- 
-footer{padding:2rem;text-align:center;font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--text-faint);border-top:1px solid var(--border);}
- 
-@media(max-width:760px){
-  .about-grid,.proj-grid,.skill-grid,.edu-grid{grid-template-columns:1fr;}
-  .stat-row{grid-template-columns:repeat(2,1fr);}
-  .nav-links{display:none;}
-}
-</style>
+
+    </style>
 </head>
 <body>
- 
-<nav>
-  <div class="nav-inner">
-    <a href="#" class="nav-logo">SBT_</a>
-    <ul class="nav-links">
-      <li><a href="#about">About</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#work">Work</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-    <div class="nav-status"><span class="dot"></span>Open to work</div>
-  </div>
+
+<nav aria-label="Primary navigation">
+    <div class="nav-inner">
+        <a class="nav-brand" href="#top" aria-label="Sai Bharath Thota, back to top">Sai Bharath Thota<span class="brand-dot">.</span></a>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#approach">Architecture</a></li>
+            <li><a href="#writing">Papers</a></li>
+            <li><a href="#values">Values</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#about">About</a></li>
+        </ul>
+        <div class="nav-actions">
+            <a class="nav-cta" href="mailto:sbharaththota@gmail.com">Get in touch</a>
+            <button type="button" id="menu-toggle" class="menu-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Open navigation"><span></span><span></span><span></span></button>
+        </div>
+    </div>
 </nav>
- 
-<div class="wrap">
- 
-  <section class="hero">
-    <div class="hero-tag mono">Data Engineer · ETL/ELT · Kafka · PySpark · Azure · AWS</div>
-    <h1>Sai Bharath Thota</h1>
-    <div class="hero-role mono">Building reliable data pipelines for regulated financial systems <span class="accent">·</span> Dallas, TX</div>
-    <p>I design and operate <strong>production grade ETL/ELT pipelines</strong>, Kafka streaming architectures, and automated data quality frameworks at <strong>AQR Capital</strong> and previously <strong>JPMorgan Chase</strong>. I care about pipelines that are reliable and observable, not just pipelines that run.</p>
-    <div class="btn-row">
-      <a href="#contact" class="btn btn-primary">Get in touch</a>
-      <a href="#projects" class="btn btn-outline">View projects</a>
+
+<section class="hero" id="top" aria-labelledby="hero-heading">
+    <p class="hero-kicker">DATA ENGINEERING · CLOUD PLATFORMS · AI SYSTEMS</p>
+    <h1 class="hero-name" id="hero-heading"><span class="hero-name-part">SAI BHARATH</span><span class="hero-name-part hero-name-outline">THOTA</span></h1>
+    <div class="hero-content">
+        <div class="hero-animation-section">
+            <div class="hero-tagline">I build data systems that <span class="changing-text" id="changing-text" aria-live="off">scale with confidence.</span></div>
+        </div>
+        <div class="hero-bottom-section">
+            <div class="hero-text">
+                <div class="hero-role">Senior Data Engineer <span class="role-divider">/</span> Data Platform Builder</div>
+                <p class="hero-description">I turn fragmented data into reliable, production-ready platforms—from CDC pipelines and cloud warehouses to governed analytics and intelligent data applications.</p>
+            </div>
+            <div class="hero-highlights">
+                <div class="hero-highlight-item"><div class="hero-highlight-label">Focus</div><div class="hero-highlight-value">Data Platforms &amp; AI</div></div>
+                <div class="hero-highlight-item"><div class="hero-highlight-label">Experience</div><div class="hero-highlight-value">5 Years</div></div>
+                <div class="hero-highlight-item"><div class="hero-highlight-label">Based in</div><div class="hero-highlight-value">Dallas–Fort Worth, TX</div></div>
+                <div class="hero-highlight-item"><div class="hero-highlight-label">Open to</div><div class="hero-highlight-value">Remote · Hybrid · Relocation</div></div>
+            </div>
+        </div>
+        <div class="hero-cta-container"><a href="#projects" class="hero-cta">Explore my work <span aria-hidden="true">↗</span></a><a href="assets/Sai_Bharath_Thota_Resume.docx" class="secondary-cta" download>Download résumé <span aria-hidden="true">↓</span></a></div>
     </div>
-    <div class="stat-row">
-      <div class="stat"><div class="stat-num">5+</div><div class="stat-lbl mono">YEARS EXP</div></div>
-      <div class="stat"><div class="stat-num">100K+</div><div class="stat-lbl mono">RECORDS/DAY</div></div>
-      <div class="stat"><div class="stat-num">99%</div><div class="stat-lbl mono">SLA ADHERENCE</div></div>
-      <div class="stat"><div class="stat-num">10+</div><div class="stat-lbl mono">PIPELINES SHIPPED</div></div>
+    <div class="hero-socials" aria-label="Social and contact links">
+        <a href="https://www.linkedin.com/in/sbharaththota/" target="_blank" rel="noopener noreferrer" class="social-link" title="LinkedIn" aria-label="LinkedIn profile">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z"/></svg>
+        </a>
+        <a href="mailto:sbharaththota@gmail.com" class="social-link" title="Email" aria-label="Send email">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m3 6 9 7 9-7"/></svg>
+        </a>
+        <a href="https://github.com/sbharaththota" target="_blank" rel="noopener noreferrer" class="social-link" title="GitHub" aria-label="GitHub profile">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.4 3-.405 1.02.005 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+        </a>
     </div>
-  </section>
- 
-  <section id="about">
-    <div class="sec-label mono">01 / ABOUT</div>
-    <h2 class="sec-title">Who I am</h2>
-    <div class="about-grid">
-      <div class="about-text">
-        <p>I'm a Data Engineer with 5+ years building production grade ETL/ELT pipelines, Kafka streaming architectures, and automated data quality frameworks in regulated financial environments.</p>
-        <p>At <strong>AQR Capital</strong> and <strong>JPMorgan Chase</strong>, I've designed and delivered systems processing <strong>100K+ records daily at 98 to 99% SLA adherence</strong>, spanning Kafka event pipelines, Azure ADF and ADLS batch workloads, PySpark transformations, dbt transformation models, and Airflow DAG orchestration with automated alerting. I also mentor junior engineers on pipeline design and data quality standards.</p>
-        <p>M.S. in Data Engineering from UNT.</p>
-        <div style="margin-top:1.5rem;">
-          <div class="principle"><span class="k mono">01</span>Reliability first, SLA adherence, retry logic, and failure alerting built in from day one</div>
-          <div class="principle"><span class="k mono">02</span>Integration depth, connecting heterogeneous systems cleanly with testable, documented code</div>
-          <div class="principle"><span class="k mono">03</span>Financial grade standards, RBAC, audit trails, credential management, data governance</div>
-        </div>
-      </div>
-      <div class="terminal">
-        <div class="term-bar">
-          <div class="term-dot" style="background:#ff5f57;"></div>
-          <div class="term-dot" style="background:#ffbd2e;"></div>
-          <div class="term-dot" style="background:#28ca42;"></div>
-        </div>
-        <div class="term-body">
-<span class="t-com"># whoami.py</span><br/>
-<span class="t-key">class</span> SaiBharath:<br/>
-&nbsp;&nbsp;role = <span class="t-str">"Data Engineer"</span><br/>
-&nbsp;&nbsp;location = <span class="t-str">"Dallas, TX"</span><br/>
-&nbsp;&nbsp;status = <span class="t-str">"Open to work"</span><br/>
-<br/>
-&nbsp;&nbsp;stack = [<span class="t-str">"Kafka"</span>, <span class="t-str">"PySpark"</span>,<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;<span class="t-str">"Azure ADF"</span>, <span class="t-str">"Airflow"</span>, <span class="t-str">"dbt"</span>]<br/>
-<br/>
-&nbsp;&nbsp;experience = {<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;<span class="t-str">"AQR Capital"</span>: <span class="t-str">"2025, present"</span>,<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;<span class="t-str">"JPMorgan Chase"</span>: <span class="t-str">"2024, 2025"</span><br/>
-&nbsp;&nbsp;}<br/>
-<br/>
-<span class="t-com"># &gt; initialized successfully</span>
-        </div>
-      </div>
-    </div>
-  </section>
- 
-  <section id="skills">
-    <div class="sec-label mono">02 / SKILLS</div>
-    <h2 class="sec-title">Tech stack</h2>
-    <div class="skill-grid">
-      <div class="skill-card">
-        <h4>PIPELINE &amp; STREAMING</h4>
-        <div class="skill-tags">
-          <span class="tag">Apache Kafka</span><span class="tag">PySpark</span><span class="tag">Spark Streaming</span><span class="tag">Delta Lake</span>
-        </div>
-      </div>
-      <div class="skill-card">
-        <h4>CLOUD &amp; ORCHESTRATION</h4>
-        <div class="skill-tags">
-          <span class="tag">Azure ADF</span><span class="tag">ADLS Gen2</span><span class="tag">Synapse</span><span class="tag">Airflow</span><span class="tag">AWS S3/Lambda</span>
-        </div>
-      </div>
-      <div class="skill-card">
-        <h4>TRANSFORMATION</h4>
-        <div class="skill-tags">
-          <span class="tag">dbt</span><span class="tag">MuleSoft 4</span><span class="tag">DataWeave 2.0</span><span class="tag">Great Expectations</span>
-        </div>
-      </div>
-      <div class="skill-card">
-        <h4>DATABASES</h4>
-        <div class="skill-tags">
-          <span class="tag">PostgreSQL</span><span class="tag">MongoDB</span><span class="tag">Snowflake</span><span class="tag">Oracle</span><span class="tag">MySQL</span>
-        </div>
-      </div>
-      <div class="skill-card">
-        <h4>DEVOPS &amp; INFRA</h4>
-        <div class="skill-tags">
-          <span class="tag">Docker</span><span class="tag">Kubernetes</span><span class="tag">Terraform</span><span class="tag">GitHub Actions</span><span class="tag">Databricks</span>
-        </div>
-      </div>
-      <div class="skill-card">
-        <h4>LANGUAGES</h4>
-        <div class="skill-tags">
-          <span class="tag">Python</span><span class="tag">SQL</span><span class="tag">PySpark</span><span class="tag">Java</span><span class="tag">Bash</span>
-        </div>
-      </div>
-    </div>
-  </section>
- 
-  <section id="work">
-    <div class="sec-label mono">03 / WORK</div>
-    <h2 class="sec-title">Experience</h2>
- 
-    <div class="job">
-      <div class="job-head">
-        <div class="job-title">Full Stack Data Engineer</div>
-        <div class="job-date mono">Mar 2025, Present</div>
-      </div>
-      <div class="job-co">A3 Tech Solutions, Client: AQR Capital · Dallas, TX (Remote)</div>
-      <ul>
-        <li>Led delivery of <strong>10+ production ETL/ELT pipelines</strong> on Azure Data Factory, ADLS Gen2, and Synapse Analytics at 98 to 99% SLA adherence</li>
-        <li>Architected Apache Kafka streaming pipelines and PySpark batch jobs processing <strong>100K+ records daily</strong>, reducing data propagation latency from hours to minutes</li>
-        <li>Built Apache Airflow DAG orchestration with scheduling, retry logic, and failure alerting across dev and production environments</li>
-        <li>Built <strong>dbt transformation models</strong> with tests, documentation, and CI/CD deployment to keep downstream data trustworthy</li>
-        <li>Implemented automated data quality reporting using Great Expectations, alerting stakeholders in real time on integrity deviations</li>
-        <li>Provisioned cloud infrastructure using <strong>Terraform</strong>, integrated into CI/CD pipelines for consistent deployments</li>
-        <li><strong>Mentored junior engineers</strong> on pipeline design, code reviews, and data quality standards, reducing onboarding time by 40%</li>
-        <li>Reduced MTTR by 25% via Azure Monitor, Log Analytics, and Application Insights with CI/CD via Jenkins and GitHub Actions</li>
-      </ul>
-    </div>
- 
-    <div class="job">
-      <div class="job-head">
-        <div class="job-title">Data Engineer</div>
-        <div class="job-date mono">Feb 2024, Jan 2025</div>
-      </div>
-      <div class="job-co">A3 Tech Solutions, Client: JPMorgan Chase · Dallas, TX (Remote)</div>
-      <ul>
-        <li>Built and maintained ETL/ELT pipelines using Python and MuleSoft 4 connecting Salesforce CRM, Oracle/MySQL, and REST/SOAP APIs</li>
-        <li>Developed DataWeave 2.0 and SQL transformation layers, improving pipeline response times by 20%</li>
-        <li>Applied data security standards including credential encryption, RBAC, and API access controls across environments</li>
-        <li>Monitored pipeline health via Anypoint Monitoring and CloudWatch, maintained CI/CD via Jenkins and Git in Agile/Scrum cycles</li>
-      </ul>
-    </div>
- 
-    <div class="job">
-      <div class="job-head">
-        <div class="job-title">Application Development Associate</div>
-        <div class="job-date mono">Sep 2020, Dec 2022</div>
-      </div>
-      <div class="job-co">Accenture, Client: MARS Petcare · Bengaluru, India</div>
-      <ul>
-        <li>Developed and maintained enterprise API led integration pipelines using MuleSoft for a global FMCG client</li>
-        <li>Automated CI/CD workflows with Jenkins, Docker, and Terraform, improving deployment speed across distributed architectures</li>
-        <li>Reduced manual data processing effort by 10 hours per week through Python automation scripts</li>
-      </ul>
-    </div>
-  </section>
- 
-  <section id="projects">
-    <div class="sec-label mono">04 / PROJECTS</div>
-    <h2 class="sec-title">Things I've built</h2>
-    <div class="proj-grid">
- 
-      <div class="proj-card">
-        <div class="proj-top">
-          <div class="proj-title">Kafka Streaming Pipeline to Delta Lake</div>
-          <a href="https://github.com/sbharaththota/kafka-streaming-pipeline" target="_blank" class="proj-link mono">View repo &#8599;</a>
-        </div>
-        <p>A Kafka to Delta Lake pipeline with schema validation, dead letter routing for invalid events, and deduplicated writes so at-least-once delivery never produces duplicate rows. 20 unit tests run independently of any live broker.</p>
-        <div class="proj-tags">
-          <span class="tag">Kafka</span><span class="tag">Delta Lake</span><span class="tag">Python</span><span class="tag">pytest</span>
-        </div>
-      </div>
- 
-      <div class="proj-card">
-        <div class="proj-top">
-          <div class="proj-title">Airflow DAG Orchestration Framework</div>
-          <a href="https://github.com/sbharaththota/airflow-dag-orchestration-framework" target="_blank" class="proj-link mono">View repo &#8599;</a>
-        </div>
-        <p>A reusable orchestration pattern with a custom retry and backoff operator and a DAG factory that generates pipelines from config. Every task includes an idempotency check so backfills never duplicate writes.</p>
-        <div class="proj-tags">
-          <span class="tag">Airflow</span><span class="tag">Python</span><span class="tag">Docker</span><span class="tag">pytest</span>
-        </div>
-      </div>
- 
-      <div class="proj-card">
-        <div class="proj-top">
-          <div class="proj-title">Azure ADF Multi-Source ETL Platform</div>
-        </div>
-        <p>Enterprise ETL platform on Azure connecting multiple heterogeneous data sources through ADF pipelines, applying validation and enrichment logic, and landing analytics ready datasets into Synapse.</p>
-        <div class="proj-tags">
-          <span class="tag">Azure ADF</span><span class="tag">Synapse</span><span class="tag">Python</span>
-        </div>
-      </div>
- 
-      <div class="proj-card">
-        <div class="proj-top">
-          <div class="proj-title">Data Quality Automation Framework</div>
-        </div>
-        <p>Automated data quality system profiling datasets, generating expectation suites, running validation checkpoints, and publishing real time alerts on integrity deviations and schema drift.</p>
-        <div class="proj-tags">
-          <span class="tag">Great Expectations</span><span class="tag">Python</span><span class="tag">Airflow</span>
-        </div>
-      </div>
- 
-    </div>
-  </section>
- 
-  <section id="education">
-    <div class="sec-label mono">05 / EDUCATION</div>
-    <h2 class="sec-title">Academic path</h2>
-    <div class="edu-grid">
-      <div class="edu-card">
-        <div class="edu-year mono">2023, 2024</div>
-        <div class="edu-deg">M.S. Data Engineering</div>
-        <div class="edu-school">University of North Texas, Denton TX · GPA 3.4</div>
-      </div>
-      <div class="edu-card">
-        <div class="edu-year mono">2017, 2021</div>
-        <div class="edu-deg">B.Tech Computer Science</div>
-        <div class="edu-school">GITAM Deemed University, India</div>
-      </div>
-    </div>
-  </section>
- 
-</div>
- 
-<section id="contact" style="border-top:1px solid var(--border);">
-  <div class="contact-inner">
-    <h2>Let's build something reliable</h2>
-    <p>Open to Senior Data Engineer, Data Platform Engineer, and Kafka/Streaming Engineer roles. Remote preferred, based in Dallas, TX.</p>
-    <div class="clink-row">
-      <a href="mailto:sbharaththota@gmail.com" class="clink">Email</a>
-      <a href="https://www.linkedin.com/in/sbharaththota" target="_blank" class="clink">LinkedIn</a>
-      <a href="https://github.com/sbharaththota" target="_blank" class="clink">GitHub</a>
-    </div>
-  </div>
+    <a class="scroll-prompt" href="#impact" aria-label="Scroll to impact metrics"><span>Scroll to explore</span><span aria-hidden="true">↓</span></a>
 </section>
- 
-<footer>SBT_ © 2026 Sai Bharath Thota. Built with care and shipped to production.</footer>
- 
+
+<div class="stats-bar" id="impact" aria-label="Career impact metrics">
+    <div class="stat-item"><div class="stat-number">100K<span class="stat-plus">+</span></div><div class="stat-label">Financial records processed daily</div></div>
+    <div class="stat-item"><div class="stat-number">99%</div><div class="stat-label">On-time scheduled data delivery</div></div>
+    <div class="stat-item"><div class="stat-number">41%</div><div class="stat-label">Faster month-end reconciliation</div></div>
+    <div class="stat-item"><div class="stat-number">25%</div><div class="stat-label">Faster incident recovery</div></div>
+</div>
+<section class="section" id="experience">
+<div class="section-label">Experience</div>
+<h2 class="section-title">Where I've built things</h2>
+<div class="experience-list"><article class="experience-card"><button type="button" class="experience-header" data-modal="experience-aqr" data-title="AQR Capital" data-subtitle="Full Stack Data Engineer · Mar 2025 – Present · Dallas, TX / Remote" aria-label="Read AQR Capital work details"><div class="experience-title-group"><h3>AQR Capital</h3><div class="experience-role">Full Stack Data Engineer · Mar 2025 – Present · Dallas, TX / Remote</div></div><span class="experience-toggle" aria-hidden="true">+</span></button></article><article class="experience-card"><button type="button" class="experience-header" data-modal="experience-jpm" data-title="JPMorgan Chase" data-subtitle="Data Engineer &amp;amp; Analytics Developer · Feb 2024 – Jan 2025 · Dallas, TX / Remote" aria-label="Read JPMorgan Chase work details"><div class="experience-title-group"><h3>JPMorgan Chase</h3><div class="experience-role">Data Engineer &amp; Analytics Developer · Feb 2024 – Jan 2025 · Dallas, TX / Remote</div></div><span class="experience-toggle" aria-hidden="true">+</span></button></article><article class="experience-card"><button type="button" class="experience-header" data-modal="experience-accenture" data-title="Accenture" data-subtitle="Application Development Associate · Sep 2020 – Dec 2022 · Bengaluru, India" aria-label="Read Accenture work details"><div class="experience-title-group"><h3>Accenture</h3><div class="experience-role">Application Development Associate · Sep 2020 – Dec 2022 · Bengaluru, India</div></div><span class="experience-toggle" aria-hidden="true">+</span></button></article></div>
+</section>
+
+<section class="section" id="projects">
+<div class="section-label">Projects</div>
+<h2 class="section-title">Selected work</h2>
+<p class="section-intro">From ingestion and modeling to operational resilience and AI-assisted workflows. Explore the engineering decisions behind each system.</p><div class="projects-three-cards"><button type="button" class="ptile" data-modal="project-ledger" data-title="Payment Ledger on Snowflake" data-subtitle="CDC · Financial data platform · Source to warehouse" aria-label="Open Payment Ledger on Snowflake details"><div class="ptile-top"><span class="ptile-num">01</span><span class="ptile-type">DATA PLATFORM · BANKING</span></div><h3 class="ptile-name">Payment Ledger on Snowflake</h3><p class="ptile-desc">Designed an auditable SQL Server-to-Snowflake CDC architecture with replay-safe transformations, medallion models, and financial control totals.</p><div class="ptile-tags"><span class="tech-tag">Qlik Replicate</span><span class="tech-tag">Snowpipe</span><span class="tech-tag">dbt Cloud</span><span class="tech-tag">Snowflake</span></div><span class="ptile-link">Explore case study <span aria-hidden="true">↗</span></span></button>
+<button type="button" class="ptile" data-modal="project-lakehouse" data-title="Real-Time Risk Lakehouse" data-subtitle="Streaming lakehouse · PySpark · Risk analytics" aria-label="Open Real-Time Risk Lakehouse details"><div class="ptile-top"><span class="ptile-num">02</span><span class="ptile-type">STREAMING · DATABRICKS</span></div><h3 class="ptile-name">Real-Time Risk Lakehouse</h3><p class="ptile-desc">Built a streaming-first data architecture for transaction events, from Kafka ingestion and PySpark enrichment to Delta Lake features and alert-ready datasets.</p><div class="ptile-tags"><span class="tech-tag">Kafka</span><span class="tech-tag">PySpark</span><span class="tech-tag">Databricks</span><span class="tech-tag">Delta Lake</span></div><span class="ptile-link">Explore case study <span aria-hidden="true">↗</span></span></button>
+<button type="button" class="ptile" data-modal="project-control" data-title="Data Quality Control Tower" data-subtitle="Quality engineering · Monitoring · Incident response" aria-label="Open Data Quality Control Tower details"><div class="ptile-top"><span class="ptile-num">03</span><span class="ptile-type">DATA TRUST · OBSERVABILITY</span></div><h3 class="ptile-name">Data Quality Control Tower</h3><p class="ptile-desc">Centralized pipeline health, schema drift, reconciliation exceptions, and SLA reporting into one engineer-friendly view of data reliability.</p><div class="ptile-tags"><span class="tech-tag">Python</span><span class="tech-tag">Great Expectations</span><span class="tech-tag">Airflow</span><span class="tech-tag">Splunk</span></div><span class="ptile-link">Explore case study <span aria-hidden="true">↗</span></span></button>
+<button type="button" class="ptile" data-modal="project-copilot" data-title="AI Data Operations Copilot" data-subtitle="RAG · Operational intelligence · AI-enabled engineering" aria-label="Open AI Data Operations Copilot details"><div class="ptile-top"><span class="ptile-num">04</span><span class="ptile-type">GENAI · DATA ENGINEERING</span></div><h3 class="ptile-name">AI Data Operations Copilot</h3><p class="ptile-desc">Created a retrieval-augmented operations assistant that connects pipeline runbooks, incident history, and warehouse metadata for faster troubleshooting.</p><div class="ptile-tags"><span class="tech-tag">Python</span><span class="tech-tag">FastAPI</span><span class="tech-tag">RAG</span><span class="tech-tag">Vector Search</span></div><span class="ptile-link">Explore case study <span aria-hidden="true">↗</span></span></button>
+<button type="button" class="ptile" data-modal="project-recovery" data-title="Overnight Feed Recovery" data-subtitle="Production reliability · SQL Server · Recovery design" aria-label="Open Overnight Feed Recovery details"><div class="ptile-top"><span class="ptile-num">05</span><span class="ptile-type">SQL SERVER · RELIABILITY</span></div><h3 class="ptile-name">Overnight Feed Recovery</h3><p class="ptile-desc">Systematized root-cause diagnosis and safe replay for critical overnight banking feeds, reducing average recovery time by 25%.</p><div class="ptile-tags"><span class="tech-tag">SQL Server</span><span class="tech-tag">Python</span><span class="tech-tag">Runbooks</span><span class="tech-tag">Monitoring</span></div><span class="ptile-link">Explore case study <span aria-hidden="true">↗</span></span></button>
+<button type="button" class="ptile" data-modal="project-analytics" data-title="Modern Analytics Foundation" data-subtitle="ELT · Dimensional modeling · Self-service analytics" aria-label="Open Modern Analytics Foundation details"><div class="ptile-top"><span class="ptile-num">06</span><span class="ptile-type">ELT · ANALYTICS ENGINEERING</span></div><h3 class="ptile-name">Modern Analytics Foundation</h3><p class="ptile-desc">Modeled cross-system business data into reusable Snowflake marts with orchestration, dbt testing, and stakeholder-ready dashboards.</p><div class="ptile-tags"><span class="tech-tag">dbt</span><span class="tech-tag">Snowflake</span><span class="tech-tag">Airflow</span><span class="tech-tag">Power BI</span></div><span class="ptile-link">Explore case study <span aria-hidden="true">↗</span></span></button></div>
+</section>
+
+<section class="section" id="approach">
+    <div class="section-label">System Architecture</div>
+    <h2 class="section-title">From raw data to trusted decisions</h2>
+    <p class="section-intro">My default approach: design for correctness first, then optimize for scale, latency, and developer experience. Every layer has a contract, an owner, and a recovery path.</p>
+    <div class="architecture-panel">
+        <div class="architecture-header"><span class="arch-eyebrow"><span class="live-dot"></span> MODERN DATA PLATFORM</span><span class="architecture-caption">Production-ready data flow</span></div>
+        <div class="architecture-flow" role="img" aria-label="Sources flow to ingestion, processing, cloud warehouse, and analytics with quality, security, and observability applied across all layers">
+            <div class="flow-step"><span class="flow-step-num">01</span><div class="flow-step-icon">◈</div><strong>Sources</strong><small>SQL Server · APIs<br>Files · Events</small></div>
+            <span class="flow-arrow" aria-hidden="true">→</span>
+            <div class="flow-step"><span class="flow-step-num">02</span><div class="flow-step-icon">⇄</div><strong>Ingestion</strong><small>ADF · Airflow<br>Kafka · CDC</small></div>
+            <span class="flow-arrow" aria-hidden="true">→</span>
+            <div class="flow-step"><span class="flow-step-num">03</span><div class="flow-step-icon">⌘</div><strong>Transform</strong><small>PySpark · dbt<br>Data contracts</small></div>
+            <span class="flow-arrow" aria-hidden="true">→</span>
+            <div class="flow-step"><span class="flow-step-num">04</span><div class="flow-step-icon">▥</div><strong>Serve</strong><small>Snowflake · Delta<br>Dimensional marts</small></div>
+            <span class="flow-arrow" aria-hidden="true">→</span>
+            <div class="flow-step"><span class="flow-step-num">05</span><div class="flow-step-icon">↗</div><strong>Consume</strong><small>BI · AI / ML<br>APIs · Insights</small></div>
+        </div>
+        <div class="architecture-foundation"><div><span>✓</span> Data quality &amp; reconciliation</div><div><span>◈</span> Security &amp; governance</div><div><span>◎</span> Monitoring &amp; recovery</div><div><span>⌁</span> CI/CD &amp; IaC</div></div>
+    </div>
+    <div class="principles-grid">
+        <div class="principle"><div class="principle-number">01 / CORRECTNESS</div><h3>Trust is engineered</h3><p>Source-to-target controls, schema checks, idempotent pipelines, and explicit business definitions prevent subtle data failures.</p></div>
+        <div class="principle"><div class="principle-number">02 / RELIABILITY</div><h3>Failure is a design input</h3><p>Retries, checkpointing, replay paths, alerting, and runbooks make failures diagnosable and recoverable.</p></div>
+        <div class="principle"><div class="principle-number">03 / PERFORMANCE</div><h3>Measure before optimizing</h3><p>Execution plans, partition strategy, cost observability, and workload-aware modeling produce sustainable improvements.</p></div>
+    </div>
+</section>
+<section class="section" id="writing">
+<div class="section-label">Papers</div>
+<h2 class="section-title">Research & technical writing</h2>
+<p class="section-intro">Architecture notes and engineering perspectives on the problems that matter most in modern data platforms.</p><div class="projects-three-cards"><button type="button" class="ptile" data-modal="paper-cdc" data-title="Reliable Change Data Capture" data-subtitle="Engineering paper · Stream processing and warehousing" aria-label="Open Reliable Change Data Capture details"><div class="ptile-top"><span class="ptile-num">01</span><span class="ptile-type">TECHNICAL PAPER · DATA PLATFORM</span></div><h3 class="ptile-name">Reliable Change Data Capture</h3><p class="ptile-desc">Design patterns for idempotency, late events, tombstones, replays, and trustworthy financial reporting from CDC feeds.</p><div class="ptile-tags"><span class="tech-tag">CDC</span><span class="tech-tag">Snowflake</span><span class="tech-tag">Data Correctness</span></div><span class="ptile-link">Read paper <span aria-hidden="true">↗</span></span></button>
+<button type="button" class="ptile" data-modal="paper-data-trust" data-title="Engineering Data Trust" data-subtitle="Engineering paper · Governance and reliability" aria-label="Open Engineering Data Trust details"><div class="ptile-top"><span class="ptile-num">02</span><span class="ptile-type">TECHNICAL PAPER · GOVERNANCE</span></div><h3 class="ptile-name">Engineering Data Trust</h3><p class="ptile-desc">A pragmatic framework for data quality, lineage, access control, observability, and ownership in regulated analytics.</p><div class="ptile-tags"><span class="tech-tag">Data Quality</span><span class="tech-tag">RBAC</span><span class="tech-tag">Lineage</span></div><span class="ptile-link">Read paper <span aria-hidden="true">↗</span></span></button>
+<button type="button" class="ptile" data-modal="paper-lakehouse" data-title="Batch to Streaming Lakehouse" data-subtitle="Engineering paper · Modern data architecture" aria-label="Open Batch to Streaming Lakehouse details"><div class="ptile-top"><span class="ptile-num">03</span><span class="ptile-type">TECHNICAL PAPER · ARCHITECTURE</span></div><h3 class="ptile-name">Batch to Streaming Lakehouse</h3><p class="ptile-desc">When to retain robust batch pipelines, where streaming adds value, and how to design the handoff cleanly.</p><div class="ptile-tags"><span class="tech-tag">Kafka</span><span class="tech-tag">Spark</span><span class="tech-tag">Delta Lake</span></div><span class="ptile-link">Read paper <span aria-hidden="true">↗</span></span></button>
+<button type="button" class="ptile" data-modal="paper-ai" data-title="Grounded AI for Data Teams" data-subtitle="Engineering paper · AI-assisted data operations" aria-label="Open Grounded AI for Data Teams details"><div class="ptile-top"><span class="ptile-num">04</span><span class="ptile-type">TECHNICAL PAPER · AI SYSTEMS</span></div><h3 class="ptile-name">Grounded AI for Data Teams</h3><p class="ptile-desc">How retrieval, evaluation, tool permissions, and feedback loops make LLM-assisted data operations more dependable.</p><div class="ptile-tags"><span class="tech-tag">RAG</span><span class="tech-tag">Evaluation</span><span class="tech-tag">LLMOps</span></div><span class="ptile-link">Read paper <span aria-hidden="true">↗</span></span></button></div>
+</section>
+
+<section class="values-section" id="values"><div class="values-container"><div class="values-header"><div class="section-label">Core Values</div><h2 class="section-title">What drives me</h2><p class="values-subtitle">The principles behind how I build, debug, and collaborate.</p></div><div class="dna-helix"><div class="helix-track" id="helix-track-values"><div class="value-card"><h3 class="value-title">Own the outcome</h3><p class="value-description">A pipeline is complete when the business can depend on it—not just when the code deploys.</p></div><div class="value-card"><h3 class="value-title">Make data trustworthy</h3><p class="value-description">Correctness, lineage, and clear contracts are first-class engineering requirements.</p></div><div class="value-card"><h3 class="value-title">Stay curious</h3><p class="value-description">I keep learning new platforms, patterns, and AI capabilities, then apply them pragmatically.</p></div><div class="value-card"><h3 class="value-title">Design for failure</h3><p class="value-description">Every system needs visibility, recovery procedures, and a safe way to replay.</p></div><div class="value-card"><h3 class="value-title">Simplify the complex</h3><p class="value-description">Good architecture helps the next engineer and stakeholder understand what matters.</p></div><div class="value-card"><h3 class="value-title">Build with people</h3><p class="value-description">Listen to analysts, finance teams, and fellow engineers before choosing a technical solution.</p></div></div></div><div class="helix-hint">SCROLL TO EXPLORE <span>↓</span></div></div></section>
+
+<section class="section" id="skills">
+<div class="section-label">Skills</div>
+<h2 class="section-title">How I build</h2>
+<p class="section-intro">A toolkit spanning robust financial data delivery, modern cloud analytics, and intelligent production systems.</p><div class="skills-grid"><div class="skill-card"><h3 class="skill-card-title">Languages &amp; Querying</h3><div class="skill-card-items"><div class="skill-card-item">Python</div><div class="skill-card-item">SQL · T-SQL · PL/SQL</div><div class="skill-card-item">Scala · Java</div><div class="skill-card-item">Bash · Shell scripting</div><div class="skill-card-item">JavaScript · REST APIs</div></div></div><div class="skill-card"><h3 class="skill-card-title">Data Engineering</h3><div class="skill-card-items"><div class="skill-card-item">PySpark · Apache Spark</div><div class="skill-card-item">Batch ETL/ELT · Streaming</div><div class="skill-card-item">Apache Kafka · CDC</div><div class="skill-card-item">Apache Airflow · Azure Data Factory</div><div class="skill-card-item">dbt Cloud · Great Expectations</div></div></div><div class="skill-card"><h3 class="skill-card-title">Cloud &amp; Warehousing</h3><div class="skill-card-items"><div class="skill-card-item">Snowflake · Snowpipe · Tasks</div><div class="skill-card-item">Databricks · Delta Lake</div><div class="skill-card-item">AWS S3 · Glue · Redshift</div><div class="skill-card-item">Azure · Microsoft Fabric</div><div class="skill-card-item">Google BigQuery</div></div></div><div class="skill-card"><h3 class="skill-card-title">Architecture &amp; Modeling</h3><div class="skill-card-items"><div class="skill-card-item">Lakehouse · Medallion</div><div class="skill-card-item">Dimensional modeling · Star schema</div><div class="skill-card-item">SCD · Incremental modeling</div><div class="skill-card-item">Data contracts · Schema evolution</div><div class="skill-card-item">Partitioning · Query optimization</div></div></div><div class="skill-card"><h3 class="skill-card-title">Quality &amp; Governance</h3><div class="skill-card-items"><div class="skill-card-item">Financial data reconciliation</div><div class="skill-card-item">Data lineage · Cataloging</div><div class="skill-card-item">RBAC · Dynamic data masking</div><div class="skill-card-item">Testing · Data observability</div><div class="skill-card-item">Audit trails · Incident response</div></div></div><div class="skill-card"><h3 class="skill-card-title">DevOps &amp; Operations</h3><div class="skill-card-items"><div class="skill-card-item">Git · GitHub Actions · CI/CD</div><div class="skill-card-item">Docker · Terraform</div><div class="skill-card-item">Splunk · Azure Monitor</div><div class="skill-card-item">SLA/SLO management</div><div class="skill-card-item">Replay · Recovery · Runbooks</div></div></div><div class="skill-card"><h3 class="skill-card-title">AI &amp; Intelligent Systems</h3><div class="skill-card-items"><div class="skill-card-item">RAG · Vector search</div><div class="skill-card-item">LLM integration · Prompt design</div><div class="skill-card-item">AI agents · Tool orchestration</div><div class="skill-card-item">FastAPI · Model serving</div><div class="skill-card-item">Evaluation · Responsible AI</div></div></div><div class="skill-card"><h3 class="skill-card-title">Analytics &amp; Collaboration</h3><div class="skill-card-items"><div class="skill-card-item">Power BI · Tableau</div><div class="skill-card-item">Pandas · NumPy</div><div class="skill-card-item">Stakeholder partnership</div><div class="skill-card-item">Agile delivery · Documentation</div><div class="skill-card-item">Mentoring · Technical reviews</div></div></div></div>
+</section>
+
+<section class="section" id="education">
+<div class="section-label">Education</div>
+<h2 class="section-title">Academic background</h2>
+<div class="experience-list"><article class="experience-card"><button type="button" class="experience-header" data-modal="edu-unt" data-title="University of North Texas" data-subtitle="Master of Science in Data Engineering · Jan 2023 – Dec 2024 · Denton, TX" aria-label="Read University of North Texas work details"><div class="experience-title-group"><h3>University of North Texas</h3><div class="experience-role">Master of Science in Data Engineering · Jan 2023 – Dec 2024 · Denton, TX</div></div><span class="experience-toggle" aria-hidden="true">+</span></button></article><article class="experience-card"><button type="button" class="experience-header" data-modal="edu-gitam" data-title="GITAM University" data-subtitle="Bachelor of Technology in Computer Science &amp;amp; Engineering · Jun 2017 – Apr 2021 · India" aria-label="Read GITAM University work details"><div class="experience-title-group"><h3>GITAM University</h3><div class="experience-role">Bachelor of Technology in Computer Science &amp; Engineering · Jun 2017 – Apr 2021 · India</div></div><span class="experience-toggle" aria-hidden="true">+</span></button></article></div>
+</section>
+
+<section class="section credentials-section" id="credentials"><div class="section-label">Credentials &amp; Focus</div><h2 class="section-title">Always expanding the toolkit</h2><div class="credential-grid"><div class="credential-card"><div class="credential-symbol">✦</div><div><h3>MuleSoft Certified Developer</h3><p>Levels 1 &amp; 2</p><span>Enterprise API &amp; integration engineering</span></div></div><div class="credential-card"><div class="credential-symbol">↗</div><div><h3>Cloud data platforms</h3><p>Snowflake · Databricks · Azure · AWS</p><span>Performance, cost, governance, and operability</span></div></div><div class="credential-card"><div class="credential-symbol">⌘</div><div><h3>Engineering frontier</h3><p>AI agents · RAG · Real-time analytics</p><span>Building practical intelligence into data systems</span></div></div></div></section>
+<section class="section" id="about">
+<div class="section-label">About</div>
+<h2 class="section-title">Beyond the résumé</h2>
+<div class="about-box"><p>I'm a Senior Data Engineer based in Dallas–Fort Worth, focused on making complex data systems dependable and useful. My work has centered on the details that make platforms production-ready: how changes arrive, why numbers disagree, what happens when a pipeline fails at 2 a.m., and whether a business team can explain the data it trusts.</p><p>I've worked across financial reporting, payment feeds, cloud warehouses, and enterprise integration. I enjoy moving between the architecture level—choosing the right patterns for ingestion, modeling, and governance—and the practical level of SQL plans, PySpark jobs, incident logs, and reliable deployment workflows.</p><p>Beyond established data engineering, I'm interested in the intersection of data platforms and AI: retrieval-aware applications, agentic workflows, and tools that help engineers investigate issues faster without compromising correctness or control. I believe strong engineering starts with curiosity, grows through collaboration, and is measured by the impact it delivers.</p></div>
+</section>
+
+<section class="contact" id="contact"><div class="section-label">Let's connect</div><h2>Let's build something <span>meaningful.</span></h2><p>Exploring Data Engineer, Senior Data Engineer, Analytics Engineer, and Data Platform Engineering opportunities across the U.S.</p><div class="contact-actions"><a href="mailto:sbharaththota@gmail.com" class="hero-cta">Get in touch <span aria-hidden="true">↗</span></a><a href="https://www.linkedin.com/in/sbharaththota/" target="_blank" rel="noopener noreferrer" class="secondary-cta">Connect on LinkedIn <span aria-hidden="true">↗</span></a></div><a class="contact-email" href="mailto:sbharaththota@gmail.com">sbharaththota@gmail.com</a></section>
+
+<footer><div class="footer-copy">© 2026 Sai Bharath Thota <span class="footer-mid">·</span> Built with purpose, powered by data.</div><div class="footer-links"><a href="mailto:sbharaththota@gmail.com">Email</a><a href="https://www.linkedin.com/in/sbharaththota/" target="_blank" rel="noopener noreferrer">LinkedIn</a><a href="https://github.com/sbharaththota" target="_blank" rel="noopener noreferrer">GitHub</a><a href="assets/Sai_Bharath_Thota_Resume.docx" download>Résumé ↓</a></div></footer>
+
+<!-- Interactive case-study and experience dialog -->
+<div class="modal-overlay" id="modal-overlay" role="presentation" aria-hidden="true"><div class="modal-container" role="dialog" aria-modal="true" aria-labelledby="modal-title-heading" aria-describedby="modal-role" tabindex="-1"><button type="button" class="modal-close" id="modal-close-btn" aria-label="Close details">×</button><div class="modal-title-block"><h3 id="modal-title-heading"></h3><div class="experience-role" id="modal-role"></div></div><div class="modal-body" id="modal-body"></div></div></div>
+<template id="experience-aqr"><div class="experience-content"><div class="experience-item"><h4 class="experience-item-title">Modern Financial Data Pipelines</h4><p class="experience-item-desc">Built <strong>Azure Data Factory and Airflow</strong> orchestration for transaction, position, and market reference data, processing <strong>100,000+ records daily</strong>. Applied <strong>PySpark</strong> transformations and modeled curated financial datasets in <strong>Snowflake</strong> for downstream reporting.</p></div>
+<div class="experience-item"><h4 class="experience-item-title">Reconciliation by Design</h4><p class="experience-item-desc">Developed <strong>20+ T-SQL procedures and views</strong> to trace unmatched entries, late-arriving files, missing keys, and balance differences; reduced analyst investigation time from <strong>5 hours to 2 hours</strong> by making exceptions actionable.</p></div>
+<div class="experience-item"><h4 class="experience-item-title">SQL Performance Engineering</h4><p class="experience-item-desc">Diagnosed execution plans, non-sargable predicates, and indexing opportunities; reduced a recurring SQL Server extraction from <strong>54 to 31 minutes</strong> while preserving control totals and downstream data correctness.</p></div>
+<div class="experience-item"><h4 class="experience-item-title">Reliability, Recovery &amp; Observability</h4><p class="experience-item-desc">Improved on-time delivery from <strong>94% to 99%</strong> across <strong>18 scheduled jobs</strong> using late-input monitoring, failure alerts, repeatable restarts, and operational runbooks.</p></div>
+<div class="experience-item"><h4 class="experience-item-title">Governed Warehouse Design</h4><p class="experience-item-desc">Structured raw, standardized, and analytics-ready data layers with data quality tests, lineage-friendly transformations, and access patterns suitable for sensitive financial information.</p></div></div></template>
+<template id="experience-jpm"><div class="experience-content"><div class="experience-item"><h4 class="experience-item-title">Banking ETL Integration</h4><p class="experience-item-desc">Integrated <strong>payments, account activity, and general ledger</strong> feeds from three systems using <strong>Azure Data Factory and SQL Server</strong>. Added schema validation at ingestion, lowering rejected daily loads by <strong>32%</strong>.</p></div>
+<div class="experience-item"><h4 class="experience-item-title">Faster Month-End Close</h4><p class="experience-item-desc">Reworked heavy reconciliation joins using staging, selective indexes, and set-based SQL, reducing month-end reconciliation execution time by <strong>41%</strong> with source-to-target control totals verified.</p></div>
+<div class="experience-item"><h4 class="experience-item-title">Finance-Ready Data Contracts</h4><p class="experience-item-desc">Partnered with finance stakeholders to standardize posting dates, currency handling, duplicate rules, and account mappings. Exception reporting reduced repetitive daily investigation by <strong>90 minutes</strong>.</p></div>
+<div class="experience-item"><h4 class="experience-item-title">Production Support &amp; Release Discipline</h4><p class="experience-item-desc">Investigated failed SFTP imports and database timeouts using logs and execution traces; validated fixes in UAT and documented rerun, rollback, and audit steps before production release.</p></div>
+<div class="experience-item"><h4 class="experience-item-title">Data Quality &amp; Controls</h4><p class="experience-item-desc">Implemented reconciliation checks for record counts, balances, null business keys, and duplicate postings to improve trust in downstream financial reports.</p></div></div></template>
+<template id="experience-accenture"><div class="experience-content"><div class="experience-item"><h4 class="experience-item-title">Automation at the Source</h4><p class="experience-item-desc">Automated flat-file, spreadsheet, JSON, and XML processing with <strong>Python</strong>, removing approximately <strong>10 hours of repetitive preparation work weekly</strong>.</p></div>
+<div class="experience-item"><h4 class="experience-item-title">Billing &amp; Interface Data Integrity</h4><p class="experience-item-desc">Traced billing discrepancies through <strong>T-SQL</strong>, source control totals, and service logs. Improved mapping rules and duplicate detection, reducing recurring support tickets by <strong>28%</strong>.</p></div>
+<div class="experience-item"><h4 class="experience-item-title">API-Driven Enterprise Integrations</h4><p class="experience-item-desc">Built and maintained <strong>Java and MuleSoft REST integrations</strong> for enterprise data exchange. Developed SQL regression tests around billing interfaces and schema changes.</p></div>
+<div class="experience-item"><h4 class="experience-item-title">Operational Readiness</h4><p class="experience-item-desc">Documented interface mappings, restart procedures, issue triage, and production handoffs so support teams could identify and recover failed integrations reliably.</p></div>
+<div class="experience-item"><h4 class="experience-item-title">Cross-Functional Delivery</h4><p class="experience-item-desc">Collaborated with QA, business analysts, and application owners on changes spanning source systems, integration layers, and reporting consumers.</p></div></div></template>
+<template id="edu-unt"><div class="experience-content"><div class="experience-item"><h4 class="experience-item-title">Focus areas</h4><p class="experience-item-desc">Cloud Data Engineering, Distributed Data Processing, Database Systems, Applied Machine Learning, and Data Analytics.</p></div>
+<div class="experience-item"><h4 class="experience-item-title">Applied work</h4><p class="experience-item-desc">Hands-on projects in PySpark transformations, distributed databases, data modeling, machine learning, and analytical visualization.</p></div></div></template>
+<template id="edu-gitam"><div class="experience-content"><div class="experience-item"><h4 class="experience-item-title">Foundation</h4><p class="experience-item-desc">Software engineering, algorithms, database management systems, computer networks, and programming fundamentals.</p></div>
+<div class="experience-item"><h4 class="experience-item-title">Engineering practice</h4><p class="experience-item-desc">Built a foundation in Java, Python, SQL, distributed application concepts, and structured problem solving.</p></div></div></template>
+<template id="project-ledger"><div class="experience-content"><div class="experience-item"><h4 class="experience-item-title">The challenge</h4><p class="experience-item-desc">Payment events arrive out of order, may be redelivered, and can include reversals or deletes. Reporting must reconcile even when upstream feeds are delayed.</p></div>
+<div class="experience-item"><h4 class="experience-item-title">Architecture</h4><p class="experience-item-desc"><strong>SQL Server → Qlik Replicate → Amazon S3 → Snowpipe → Snowflake bronze/silver/gold → dbt Cloud</strong>. Preserve source keys, event operation, and change sequence for every record.</p></div>
+<div class="experience-item"><h4 class="experience-item-title">Key engineering decisions</h4><p class="experience-item-desc">Apply ordering and deduplication in the silver layer. Maintain deletion markers to prevent stale updates from restoring removed rows. Expose gold aggregates by account, posting date, and currency.</p></div>
+<div class="experience-item"><h4 class="experience-item-title">Trust and governance</h4><p class="experience-item-desc">Run tests for duplicates, late postings, debit/credit equality, and source-to-target counts. Apply <strong>Snowflake dynamic masking + RBAC</strong>; monitor replication lag and retain the last reconciled reporting state on control failure.</p></div></div></template>
+<template id="project-lakehouse"><div class="experience-content"><div class="experience-item"><h4 class="experience-item-title">The challenge</h4><p class="experience-item-desc">High-volume transactions demand both low-latency anomaly signals and durable historical datasets that analysts can interrogate after the fact.</p></div>
+<div class="experience-item"><h4 class="experience-item-title">Architecture</h4><p class="experience-item-desc"><strong>Kafka topics → Structured Streaming → Delta bronze → quality-enforced silver → feature-ready gold</strong>, with checkpointing and event-time windows for late events.</p></div>
+<div class="experience-item"><h4 class="experience-item-title">Data model</h4><p class="experience-item-desc">Use immutable event IDs, idempotent upserts, schema evolution rules, and curated customer/account aggregates. Separate operational risk scores from analytical backfills.</p></div>
+<div class="experience-item"><h4 class="experience-item-title">Operational controls</h4><p class="experience-item-desc">Track consumer lag, watermark delay, micro-batch duration, duplicate event rate, and feature freshness. Partition storage around query patterns rather than raw ingest volume alone.</p></div></div></template>
+<template id="project-control"><div class="experience-content"><div class="experience-item"><h4 class="experience-item-title">The challenge</h4><p class="experience-item-desc">A successful pipeline run does not guarantee that data is complete, timely, accurate, or ready for finance reporting.</p></div>
+<div class="experience-item"><h4 class="experience-item-title">Architecture</h4><p class="experience-item-desc">Collect run metadata, Airflow task state, schema-change events, and quality assertion outcomes in a consolidated operational dataset; surface freshness and anomaly views by critical data product.</p></div>
+<div class="experience-item"><h4 class="experience-item-title">Quality strategy</h4><p class="experience-item-desc">Use tests for freshness, uniqueness, nullability, accepted ranges, dimensional integrity, and financial control balances. Escalate by data product criticality instead of treating every failure equally.</p></div>
+<div class="experience-item"><h4 class="experience-item-title">Recovery patterns</h4><p class="experience-item-desc">Quarantine malformed files, keep replayable raw data, and publish restart instructions that preserve already-completed steps. Incident records capture cause, downstream impact, and prevention.</p></div></div></template>
+<template id="project-copilot"><div class="experience-content"><div class="experience-item"><h4 class="experience-item-title">The challenge</h4><p class="experience-item-desc">Useful operational context is scattered across dashboards, runbooks, log excerpts, and tickets, slowing incident investigation and onboarding.</p></div>
+<div class="experience-item"><h4 class="experience-item-title">Architecture</h4><p class="experience-item-desc">Use a Python/FastAPI service to retrieve indexed runbooks and curated operational knowledge, then construct grounded LLM responses with citations to source material.</p></div>
+<div class="experience-item"><h4 class="experience-item-title">Guardrails</h4><p class="experience-item-desc">Limit retrieval to permitted documentation, redact secrets, separate read-only diagnostics from any remediation, and require human approval for production actions.</p></div>
+<div class="experience-item"><h4 class="experience-item-title">Evaluation</h4><p class="experience-item-desc">Evaluate retrieval relevance, citation coverage, answer accuracy, latency, and refusal behavior on known incident questions. Track failure cases as part of continuous improvement.</p></div></div></template>
+<template id="project-recovery"><div class="experience-content"><div class="experience-item"><h4 class="experience-item-title">The challenge</h4><p class="experience-item-desc">Daily batch failures can interrupt reconciliation and downstream reporting when the cause is obscured by generic error logs.</p></div>
+<div class="experience-item"><h4 class="experience-item-title">Troubleshooting approach</h4><p class="experience-item-desc">Correlate SQL Server Agent history, load manifests, interface logs, missing-key patterns, and database lock/deadlock evidence to isolate the actual failure class.</p></div>
+<div class="experience-item"><h4 class="experience-item-title">Operational improvement</h4><p class="experience-item-desc">Create precise restart boundaries, verified rollback paths, data control checks, and service-owner escalation instructions. Reduced average recovery time by <strong>25%</strong>.</p></div>
+<div class="experience-item"><h4 class="experience-item-title">Evidence of correctness</h4><p class="experience-item-desc">Reconcile restored and replayed row counts and financial totals, maintain change audit trails, and test recovery paths outside production.</p></div></div></template>
+<template id="project-analytics"><div class="experience-content"><div class="experience-item"><h4 class="experience-item-title">The challenge</h4><p class="experience-item-desc">Inconsistent definitions across source systems create redundant dashboard logic, slow analysis, and conflicting business metrics.</p></div>
+<div class="experience-item"><h4 class="experience-item-title">Architecture</h4><p class="experience-item-desc">Orchestrate ingestion with Airflow; use dbt staging, intermediate, and mart layers; publish documented dimensional models for reporting, variance analysis, and self-service BI.</p></div>
+<div class="experience-item"><h4 class="experience-item-title">Modeling choices</h4><p class="experience-item-desc">Use conformed dimensions, clear grain definitions, slowly changing dimensions where needed, incremental materializations, and tests that catch broken relationships.</p></div>
+<div class="experience-item"><h4 class="experience-item-title">Delivery practices</h4><p class="experience-item-desc">Apply version control, CI checks, model ownership, semantic metric definitions, and freshness monitoring to reduce repeated ad hoc report development.</p></div></div></template>
+<template id="paper-cdc"><div class="experience-content"><div class="experience-item"><h4 class="experience-item-title">The core idea</h4><p class="experience-item-desc">CDC must preserve source semantics, not merely move changed rows faster. Deletes, out-of-order updates, and retries change what the final state means.</p></div>
+<div class="experience-item"><h4 class="experience-item-title">Recommended pattern</h4><p class="experience-item-desc">Capture operation type and sequence, persist immutable raw change events, materialize current state deterministically, and keep explicit deletion semantics.</p></div>
+<div class="experience-item"><h4 class="experience-item-title">Verification</h4><p class="experience-item-desc">Use record count reconciliation, change-window checks, idempotent replay tests, and source-derived control totals before promoting data to business-facing marts.</p></div></div></template>
+<template id="paper-data-trust"><div class="experience-content"><div class="experience-item"><h4 class="experience-item-title">Four dimensions of trust</h4><p class="experience-item-desc">Data must be <strong>correct, complete, timely, and appropriately accessible</strong>. Quality tests are one control within a broader operational system.</p></div>
+<div class="experience-item"><h4 class="experience-item-title">Implementation blueprint</h4><p class="experience-item-desc">Define data contracts, assign owners, evaluate criticality, assert quality at layer boundaries, monitor freshness, and log recoverable incidents.</p></div>
+<div class="experience-item"><h4 class="experience-item-title">Measuring progress</h4><p class="experience-item-desc">Track detection-to-recovery time, preventable incident recurrence, reconciliation exception rate, and consumer confidence in published datasets.</p></div></div></template>
+<template id="paper-lakehouse"><div class="experience-content"><div class="experience-item"><h4 class="experience-item-title">Choosing the right latency</h4><p class="experience-item-desc">Streaming complexity only pays off when the business benefit of fresher data exceeds the cost of operating continuously.</p></div>
+<div class="experience-item"><h4 class="experience-item-title">Architecture considerations</h4><p class="experience-item-desc">Plan for backpressure, event-time semantics, watermarking, state growth, checkpoint recovery, exactly-once effects, and schema compatibility.</p></div>
+<div class="experience-item"><h4 class="experience-item-title">Operating model</h4><p class="experience-item-desc">Measure end-to-end latency, pipeline cost, replayability, and failure isolation. Build batch reprocessing from the same durable event history.</p></div></div></template>
+<template id="paper-ai"><div class="experience-content"><div class="experience-item"><h4 class="experience-item-title">The useful boundary</h4><p class="experience-item-desc">LLMs can synthesize diagnostic context, but they should not invent production state or silently modify critical systems.</p></div>
+<div class="experience-item"><h4 class="experience-item-title">System design</h4><p class="experience-item-desc">Use retrieval over curated runbooks and catalog metadata, cite evidence, apply least-privilege tools, and make all production write actions approval-gated.</p></div>
+<div class="experience-item"><h4 class="experience-item-title">Evaluation strategy</h4><p class="experience-item-desc">Maintain a set of known incident questions with expected evidence, score correctness and citation grounding, and review security and privacy failure modes.</p></div></div></template>
+
+<script>
+(function(){
+    'use strict';
+    const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const nav = document.getElementById('nav-links');
+    const toggle = document.getElementById('menu-toggle');
+    if (toggle && nav) {
+        toggle.addEventListener('click',()=>{
+            const open=nav.classList.toggle('open');
+            toggle.setAttribute('aria-expanded',String(open));
+            toggle.setAttribute('aria-label',open?'Close navigation':'Open navigation');
+        });
+    }
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+        a.addEventListener('click',e=>{
+            const id=a.getAttribute('href');
+            if(!id||id==='#')return;
+            const t=document.querySelector(id);
+            if (!t) return;
+            e.preventDefault();
+            t.scrollIntoView({behavior:reduced?'auto':'smooth',block:'start'});
+            history.replaceState(null,'',id);
+            if(nav){nav.classList.remove('open')}
+            if(toggle){toggle.setAttribute('aria-expanded','false');toggle.setAttribute('aria-label','Open navigation')}
+        });
+    });
+    const overlay=document.getElementById('modal-overlay');
+    const dialog=overlay.querySelector('.modal-container');
+    const closeBtn=document.getElementById('modal-close-btn');
+    const titleEl=document.getElementById('modal-title-heading');
+    const subtitleEl=document.getElementById('modal-role');
+    const bodyEl=document.getElementById('modal-body');
+    let previousFocus=null;
+    function openModal(trigger){
+        const template=document.getElementById(trigger.dataset.modal);
+        if(!template)return;
+        previousFocus=document.activeElement;
+        titleEl.textContent=trigger.dataset.title||'';
+        subtitleEl.textContent=trigger.dataset.subtitle||'';
+        bodyEl.replaceChildren(template.content.cloneNode(true));
+        overlay.classList.add('active');
+        overlay.setAttribute('aria-hidden','false');
+        document.body.classList.add('modal-open');
+        closeBtn.focus();
+    }
+    function closeModal(){
+        if(!overlay.classList.contains('active'))return;
+        overlay.classList.remove('active');
+        overlay.setAttribute('aria-hidden','true');
+        document.body.classList.remove('modal-open');
+        if(previousFocus&&previousFocus.isConnected)previousFocus.focus();
+    }
+    document.querySelectorAll('[data-modal]').forEach(el=>el.addEventListener('click',()=>openModal(el)));
+    closeBtn.addEventListener('click',closeModal);
+    overlay.addEventListener('click',e=>{if(e.target===overlay)closeModal();});
+    document.addEventListener('keydown',e=>{
+        if(!overlay.classList.contains('active'))return;
+        if(e.key==='Escape'){closeModal();return;}
+        if(e.key!=='Tab')return;
+        const focusable=Array.from(dialog.querySelectorAll('a[href],button:not([disabled]),[tabindex]:not([tabindex="-1"])')).filter(x=>x.offsetParent!==null);
+        if(!focusable.length){e.preventDefault();dialog.focus();return;}
+        const first=focusable[0],last=focusable[focusable.length-1];
+        if(e.shiftKey&&document.activeElement===first){e.preventDefault();last.focus();}
+        else if(!e.shiftKey&&document.activeElement===last){e.preventDefault();first.focus();}
+    });
+    const valSec=document.querySelector('.values-section');
+    const track=document.getElementById('helix-track-values');
+    let ticking=false;
+    function positionHelix(){
+        if(!valSec||!track)return;
+        const r=valSec.getBoundingClientRect();
+        const distance=Math.max(1,valSec.offsetHeight-window.innerHeight);
+        const p=Math.min(1,Math.max(0,(-r.top)/distance));
+        track.style.transform=`rotateY(${-720*p}deg)`;
+        ticking=false;
+    }
+    if(valSec&&track&&!reduced){
+        positionHelix();
+        window.addEventListener('scroll',()=>{if(!ticking){ticking=true;requestAnimationFrame(positionHelix)}},{passive:true});
+        window.addEventListener('resize',positionHelix,{passive:true});
+    }
+    const typer=document.getElementById('changing-text');
+    const phrases=['scale with confidence.','turn data into decisions.','recover when things break.','make every metric trustworthy.'];
+    if(typer&&!reduced){
+        let p=0,i=phrases[0].length,deleting=true;
+        function type(){
+            const phrase=phrases[p];
+            typer.textContent=phrase.slice(0,i);
+            let ms=deleting?45:85;
+            if(!deleting&&i===phrase.length){deleting=true;ms=1900;}
+            else if(deleting&&i===0){deleting=false;p=(p+1)%phrases.length;ms=350;}
+            i+=deleting?-1:1;
+            setTimeout(type,ms);
+        }
+        setTimeout(type,1600);
+    }
+})();
+</script>
 </body>
 </html>
