@@ -1,0 +1,155 @@
+%PDF-1.4
+%‚„œ”
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [7 0 R 9 0 R] /Count 2 >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica /Encoding /WinAnsiEncoding >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding >>
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Oblique /Encoding /WinAnsiEncoding >>
+endobj
+6 0 obj
+<< /Length 5888 >>
+stream
+0.10 0.10 0.10 rg
+0.42 0.18 0.06 RG 1.4 w 42 775 m 570 775 l S
+BT /F2 15.40 Tf 100 Tz 1 0 0 1 245.71 757.00 Tm (SAI BHARATH THOTA) Tj ET
+BT /F2 9.00 Tf 100 Tz 1 0 0 1 183.06 738.00 Tm (SENIOR DATA ENGINEER | DATA PLATFORM & ANALYTICS ENGINEERING) Tj ET
+BT /F1 8.45 Tf 100 Tz 1 0 0 1 187.45 724.00 Tm (DallasñFort Worth, TX | \(940\) 336-5878 | sbharaththota@gmail.com) Tj ET
+BT /F1 8.45 Tf 100 Tz 1 0 0 1 205.36 711.40 Tm (linkedin.com/in/sbharaththota | github.com/sbharaththota) Tj ET
+0.42 0.18 0.06 rg
+BT /F2 9.55 Tf 100 Tz 1 0 0 1 42.00 690.40 Tm (PROFESSIONAL SUMMARY) Tj ET
+0.72 0.69 0.66 RG 0.45 w 42 686.4 m 570 686.4 l S
+0.10 0.10 0.10 rg
+BT /F1 8.65 Tf 100 Tz 1 0 0 1 42.00 668.80 Tm (Senior Data Engineer with approximately 5 years of experience designing and supporting production data) Tj ET
+BT /F1 8.65 Tf 100 Tz 1 0 0 1 42.00 656.40 Tm (pipelines, enterprise integrations, and analytics datasets. Experienced in Python, SQL, PySpark, Airflow, Azure) Tj ET
+BT /F1 8.65 Tf 100 Tz 1 0 0 1 42.00 644.00 Tm (Data Factory, Databricks, and Snowflake across ingestion, transformation, modeling, and operations. Focused) Tj ET
+BT /F1 8.65 Tf 100 Tz 1 0 0 1 42.00 631.60 Tm (on reliable delivery, query performance, data quality, and maintainable solutions for cross-functional teams.) Tj ET
+0.42 0.18 0.06 rg
+BT /F2 9.55 Tf 100 Tz 1 0 0 1 42.00 610.80 Tm (TECHNICAL SKILLS) Tj ET
+0.72 0.69 0.66 RG 0.45 w 42 606.8 m 570 606.8 l S
+0.10 0.10 0.10 rg
+BT /F1 8.65 Tf 100 Tz 1 0 0 1 42.00 595.60 Tm (Languages & SQL: Python, PySpark, SQL, PostgreSQL, T-SQL, SQL Server, Oracle, MySQL, Java, Bash; CTEs, window) Tj ET
+BT /F1 8.65 Tf 100 Tz 1 0 0 1 42.00 583.20 Tm (functions, stored procedures, query tuning) Tj ET
+BT /F1 8.65 Tf 100 Tz 1 0 0 1 42.00 570.80 Tm (Pipelines & Platforms: ETL/ELT, Apache Spark, Azure Data Factory \(ADF\), Apache Airflow, Azure Databricks, Delta) Tj ET
+BT /F1 8.65 Tf 100 Tz 1 0 0 1 42.00 558.40 Tm (Lake, Apache Kafka, Spark Streaming, dbt) Tj ET
+BT /F1 8.65 Tf 100 Tz 1 0 0 1 42.00 546.00 Tm (Cloud & Warehousing: Snowflake, AWS \(S3, Lambda, RDS, CloudWatch\), Azure \(ADLS Gen2, Synapse, Azure) Tj ET
+BT /F1 8.65 Tf 100 Tz 1 0 0 1 42.00 533.60 Tm (Monitor\), data warehousing, data marts, dimensional modeling) Tj ET
+BT /F1 8.65 Tf 100 Tz 1 0 0 1 42.00 521.20 Tm (Analytics & Integration: Power BI, DAX, pandas, REST APIs, Flask, SQLAlchemy, JSON/XML, source-to-target) Tj ET
+BT /F1 8.65 Tf 100 Tz 1 0 0 1 42.00 508.80 Tm (reconciliation, data-quality checks) Tj ET
+BT /F1 8.65 Tf 100 Tz 1 0 0 1 42.00 496.40 Tm (Engineering Practices: Great Expectations, Git, GitHub Actions, Jenkins, CI/CD, Docker, Terraform, data lineage,) Tj ET
+BT /F1 8.65 Tf 100 Tz 1 0 0 1 42.00 484.00 Tm (observability, incident response, Agile) Tj ET
+0.42 0.18 0.06 rg
+BT /F2 9.55 Tf 100 Tz 1 0 0 1 42.00 463.20 Tm (PROFESSIONAL EXPERIENCE) Tj ET
+0.72 0.69 0.66 RG 0.45 w 42 459.2 m 570 459.2 l S
+0.10 0.10 0.10 rg
+BT /F2 9.20 Tf 100 Tz 1 0 0 1 42.00 441.60 Tm (AQR Capital) Tj ET
+BT /F1 8.60 Tf 100 Tz 1 0 0 1 497.67 441.60 Tm (Mar 2025 ñ Present) Tj ET
+BT /F3 8.75 Tf 100 Tz 1 0 0 1 42.00 429.20 Tm (Full Stack Data Engineer) Tj ET
+BT /F1 8.60 Tf 100 Tz 1 0 0 1 502.49 429.20 Tm (Dallas, TX | Remote) Tj ET
+BT /F1 8.65 Tf 100 Tz 1 0 0 1 45.00 416.80 Tm (ï Improved on-time delivery from 94% to 99% across 18 scheduled jobs by building restart-safe Azure Data) Tj ET
+BT /F1 8.65 Tf 100 Tz 1 0 0 1 55.00 404.40 Tm (Factory, Airflow, and PySpark pipelines with schema checks, dependency monitoring, and recovery controls.) Tj ET
+BT /F1 8.65 Tf 100 Tz 1 0 0 1 45.00 392.00 Tm (ï Reduced a critical SQL Server extract runtime by 43% \(54 to 31 minutes\) by reviewing execution plans,) Tj ET
+BT /F1 8.65 Tf 100 Tz 1 0 0 1 55.00 379.60 Tm (rewriting non-sargable predicates, and applying targeted composite indexes.) Tj ET
+BT /F1 8.65 Tf 100 Tz 1 0 0 1 45.00 367.20 Tm (ï Designed Python Flask and SQLAlchemy services that integrate enterprise data sources and deliver reusable) Tj ET
+BT /F1 8.65 Tf 100 Tz 1 0 0 1 55.00 354.80 Tm (REST endpoints for downstream analytics applications.) Tj ET
+BT /F1 8.65 Tf 100 Tz 1 0 0 1 45.00 342.40 Tm (ï Built reporting-ready Snowflake and PostgreSQL datasets, applying SQL transformations, dimensional) Tj ET
+BT /F1 8.65 Tf 100 Tz 1 0 0 1 55.00 330.00 Tm (modeling, and reconciliation rules to financial and operational data.) Tj ET
+BT /F1 8.65 Tf 100 Tz 1 0 0 1 45.00 317.60 Tm (ï Implemented data-quality checks, failure alerts, logging, and incident runbooks to detect upstream changes,) Tj ET
+BT /F1 8.65 Tf 100 Tz 1 0 0 1 55.00 305.20 Tm (troubleshoot pipeline failures, and support reliable reprocessing.) Tj ET
+BT /F1 8.65 Tf 100 Tz 1 0 0 1 45.00 292.80 Tm (ï Partnered with analysts and engineers on Power BI reporting, code reviews, release testing, access controls,) Tj ET
+BT /F1 8.65 Tf 100 Tz 1 0 0 1 55.00 280.40 Tm (and production-support handoffs.) Tj ET
+BT /F2 9.20 Tf 100 Tz 1 0 0 1 42.00 261.60 Tm (JPMorgan Chase) Tj ET
+BT /F1 8.60 Tf 100 Tz 1 0 0 1 496.21 261.60 Tm (Feb 2024 ñ Jan 2025) Tj ET
+BT /F3 8.75 Tf 100 Tz 1 0 0 1 42.00 249.20 Tm (Data Engineer & Analytics Developer) Tj ET
+BT /F1 8.60 Tf 100 Tz 1 0 0 1 502.49 249.20 Tm (Dallas, TX | Remote) Tj ET
+BT /F1 8.65 Tf 100 Tz 1 0 0 1 45.00 236.80 Tm (ï Reduced rejected daily data loads by 32% by adding schema validation and standardized SQL Server staging) Tj ET
+BT /F1 8.65 Tf 100 Tz 1 0 0 1 55.00 224.40 Tm (to Azure Data Factory integrations for payment, account, and general-ledger feeds.) Tj ET
+BT /F1 8.65 Tf 100 Tz 1 0 0 1 45.00 212.00 Tm (ï Improved backend data-processing performance by more than 20% by tuning database queries and) Tj ET
+BT /F1 8.65 Tf 100 Tz 1 0 0 1 55.00 199.60 Tm (Flask/SQLAlchemy integration logic for enterprise data sources.) Tj ET
+0.47 0.47 0.47 rg
+BT /F1 7.20 Tf 100 Tz 1 0 0 1 450.00 35.00 Tm (Sai Bharath Thota  |  1 / 2) Tj ET
+endstream
+endobj
+7 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 6 0 R >>
+endobj
+8 0 obj
+<< /Length 4489 >>
+stream
+0.10 0.10 0.10 rg
+0.42 0.18 0.06 RG 1.4 w 42 775 m 570 775 l S
+BT /F1 8.65 Tf 100 Tz 1 0 0 1 45.00 757.00 Tm (ï Developed SQL joins, CTEs, stored procedures, and source-to-target reconciliation checks to standardize) Tj ET
+BT /F1 8.65 Tf 100 Tz 1 0 0 1 55.00 744.60 Tm (financial records and support consistent reporting.) Tj ET
+BT /F1 8.65 Tf 100 Tz 1 0 0 1 45.00 732.20 Tm (ï Built REST-backed data services and Power BI datasets and dashboards, helping finance and operations) Tj ET
+BT /F1 8.65 Tf 100 Tz 1 0 0 1 55.00 719.80 Tm (teams investigate trends, anomalies, and exceptions.) Tj ET
+BT /F1 8.65 Tf 100 Tz 1 0 0 1 45.00 707.40 Tm (ï Investigated failed loads and integration defects, coordinated UAT sign-off, and supported Git/Jenkins) Tj ET
+BT /F1 8.65 Tf 100 Tz 1 0 0 1 55.00 695.00 Tm (releases with access controls, test evidence, and documentation.) Tj ET
+BT /F2 9.20 Tf 100 Tz 1 0 0 1 42.00 676.20 Tm (Accenture) Tj ET
+BT /F1 8.60 Tf 100 Tz 1 0 0 1 496.21 676.20 Tm (Sep 2020 ñ Dec 2022) Tj ET
+BT /F3 8.75 Tf 100 Tz 1 0 0 1 42.00 663.80 Tm (Application Development Associate) Tj ET
+BT /F1 8.60 Tf 100 Tz 1 0 0 1 511.69 663.80 Tm (Bengaluru, India) Tj ET
+BT /F1 8.65 Tf 100 Tz 1 0 0 1 45.00 651.40 Tm (ï Saved approximately 10 hours of manual preparation each week by automating validation and cleansing of) Tj ET
+BT /F1 8.65 Tf 100 Tz 1 0 0 1 55.00 639.00 Tm (Excel, CSV, JSON, and XML source files with Python and SQL.) Tj ET
+BT /F1 8.65 Tf 100 Tz 1 0 0 1 45.00 626.60 Tm (ï Reduced repeat billing-interface support tickets by 28% by tracing duplicate invoices and faulty mappings) Tj ET
+BT /F1 8.65 Tf 100 Tz 1 0 0 1 55.00 614.20 Tm (through application logs and SQL control totals, then correcting transformation and replay logic.) Tj ET
+BT /F1 8.65 Tf 100 Tz 1 0 0 1 45.00 601.80 Tm (ï Developed MuleSoft and Java REST integrations with Oracle/MySQL transformations for enterprise) Tj ET
+BT /F1 8.65 Tf 100 Tz 1 0 0 1 55.00 589.40 Tm (application data exchange and downstream reporting.) Tj ET
+BT /F1 8.65 Tf 100 Tz 1 0 0 1 45.00 577.00 Tm (ï Created SQL regression checks and integration tests to verify source-to-target mappings, recover failed) Tj ET
+BT /F1 8.65 Tf 100 Tz 1 0 0 1 55.00 564.60 Tm (interfaces, and support controlled production changes.) Tj ET
+BT /F1 8.65 Tf 100 Tz 1 0 0 1 45.00 552.20 Tm (ï Collaborated on Git/Jenkins delivery pipelines, Docker-based validation, Agile sprint execution, peer reviews,) Tj ET
+BT /F1 8.65 Tf 100 Tz 1 0 0 1 55.00 539.80 Tm (and technical handover documentation.) Tj ET
+0.42 0.18 0.06 rg
+BT /F2 9.55 Tf 100 Tz 1 0 0 1 42.00 519.00 Tm (SELECTED PROJECTS) Tj ET
+0.72 0.69 0.66 RG 0.45 w 42 515.0 m 570 515.0 l S
+0.10 0.10 0.10 rg
+BT /F2 8.90 Tf 100 Tz 1 0 0 1 42.00 503.80 Tm (Enterprise Data Pipeline & Quality Framework | Azure Data Factory, Databricks, PySpark, Airflow, Snowflake,) Tj ET
+BT /F1 8.65 Tf 100 Tz 1 0 0 1 42.00 491.20 Tm (Great Expectations) Tj ET
+BT /F1 8.65 Tf 100 Tz 1 0 0 1 55.00 478.80 Tm (Built orchestrated ingestion and transformation workflows with automated data checks, cloud monitoring, and) Tj ET
+BT /F1 8.65 Tf 100 Tz 1 0 0 1 55.00 466.40 Tm (warehouse-ready datasets for recurring operational analytics.) Tj ET
+BT /F2 8.90 Tf 100 Tz 1 0 0 1 42.00 454.00 Tm (Financial Analytics & Reporting Platform | Snowflake, PostgreSQL, Python Flask, SQLAlchemy, Power BI, React,) Tj ET
+BT /F1 8.65 Tf 100 Tz 1 0 0 1 42.00 441.40 Tm (AgGrid) Tj ET
+BT /F1 8.65 Tf 100 Tz 1 0 0 1 55.00 429.00 Tm (Connected warehouse and relational data to reusable APIs and interactive reporting tools, enabling business users) Tj ET
+BT /F1 8.65 Tf 100 Tz 1 0 0 1 55.00 416.60 Tm (to examine financial trends, anomalies, and operational metrics.) Tj ET
+0.42 0.18 0.06 rg
+BT /F2 9.55 Tf 100 Tz 1 0 0 1 42.00 395.80 Tm (EDUCATION & CERTIFICATIONS) Tj ET
+0.72 0.69 0.66 RG 0.45 w 42 391.8 m 570 391.8 l S
+0.10 0.10 0.10 rg
+BT /F1 8.65 Tf 100 Tz 1 0 0 1 42.00 380.60 Tm (University of North Texas ó Master of Science, Data Engineering                                   Jan 2023 ñ Dec 2024) Tj ET
+BT /F1 8.65 Tf 100 Tz 1 0 0 1 42.00 368.20 Tm (GITAM University ó Bachelor of Technology, Computer Science & Engineering                         Jun 2017 ñ Apr 2021) Tj ET
+BT /F2 8.65 Tf 100 Tz 1 0 0 1 42.00 355.80 Tm (Certifications: AWS Certified Data Engineer ñ Associate; MuleSoft Certified Developer, Levels 1 & 2) Tj ET
+0.47 0.47 0.47 rg
+BT /F1 7.20 Tf 100 Tz 1 0 0 1 450.00 35.00 Tm (Sai Bharath Thota  |  2 / 2) Tj ET
+endstream
+endobj
+9 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 8 0 R >>
+endobj
+10 0 obj
+<< /Title (Sai Bharath Thota Resume) /Author (Sai Bharath Thota) /Creator (Resume PDF export) >>
+endobj
+xref
+0 11
+0000000000 65535 f 
+0000000015 00000 n 
+0000000064 00000 n 
+0000000127 00000 n 
+0000000224 00000 n 
+0000000326 00000 n 
+0000000431 00000 n 
+0000006370 00000 n 
+0000006516 00000 n 
+0000011056 00000 n 
+0000011202 00000 n 
+trailer
+<< /Size 11 /Root 1 0 R /Info 10 0 R >>
+startxref
+11315
+%%EOF
